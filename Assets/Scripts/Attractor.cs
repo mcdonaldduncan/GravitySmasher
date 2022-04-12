@@ -16,7 +16,7 @@ public class Attractor : MonoBehaviour
     Rigidbody rb;
     SphereCollider sphereCollider;
 
-    const float G = 6.67f;
+    const float G = .667f;
 
     float radius;
     float volume;
@@ -53,9 +53,24 @@ public class Attractor : MonoBehaviour
 
         if (shouldLaunch)
         {
-            Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position).normalized * Random.Range(-1, 2) * Mathf.Pow(mass, 3);
+            Vector2 initialForce = InitialVector();
             rb.AddForce(initialForce, ForceMode.Impulse);
         }
+    }
+
+    Vector2 InitialVector()
+    {
+        float scale = Random.Range(-1f, 1f);
+        if (scale >= 0)
+        {
+            scale = Random.Range(5f, 10f);
+        }
+        else
+        {
+            scale = Random.Range(-10f, -5f);
+        }
+        Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position).normalized * Mathf.Pow(mass, 2) * scale / Vector3.Magnitude(Star.transform.position - transform.position);
+        return initialForce;
     }
 
     void FixedUpdate()
@@ -72,7 +87,7 @@ public class Attractor : MonoBehaviour
                 if (bodies[i].rb != rb)
                 {
                     Vector2 force = Attract(bodies[i].rb);
-                    bodies[i].rb.AddForce(force, ForceMode.Force);
+                    bodies[i].rb.AddForce(force, ForceMode.Acceleration);
                 }
             }
         }
@@ -86,7 +101,7 @@ public class Attractor : MonoBehaviour
 
     void CalculateMass()
     {
-        radius = sphereCollider.radius * transform.localScale.x / 2;
+        radius = sphereCollider.radius * transform.localScale.x / 3f;
         volume = (4 / 3) * Mathf.PI * Mathf.Pow(radius, 3);
         mass = volume * density;
         rb.mass = mass;
@@ -96,9 +111,9 @@ public class Attractor : MonoBehaviour
     {
         Vector2 force = rb.position - toAttract.position;
         float distance = force.magnitude;
-        distance = Mathf.Clamp(distance, 1f, 50f);
+        distance = Mathf.Clamp(distance, 10f, 100f);
         force.Normalize();
-        float strength = G * (rb.mass * toAttract.mass) / Mathf.Pow(distance, 2);
+        float strength = G * (mass * toAttract.mass) / Mathf.Pow(distance, 2);
         force *= strength;
         return force;
     }
