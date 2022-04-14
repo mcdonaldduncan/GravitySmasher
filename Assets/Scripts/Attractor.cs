@@ -19,7 +19,6 @@ public class Attractor : MonoBehaviour
     OptionManager optionManager;
 
     const float G = 1.67f;
-
     float radius;
     float volume;
     float mass;
@@ -51,7 +50,7 @@ public class Attractor : MonoBehaviour
 
     void Start()
     {
-        CalculateMass();
+        rb.mass = CalculateMass();
         bodies = FindObjectsOfType<Attractor>();
 
         if (shouldLaunch)
@@ -62,56 +61,49 @@ public class Attractor : MonoBehaviour
         }
     }
 
-    Vector2 InitialVector()
-    {
-        float scale = Random.Range(-1f, 1f);
-        if (scale >= 0)
-        {
-            scale = Random.Range(5f, 6f);
-        }
-        else
-        {
-            scale = Random.Range(-6f, -5f);
-        }
-        Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(Star.transform.position - transform.position);
-        return initialForce;
-    }
-
     void FixedUpdate()
     {
         SimulateAttraction();
     }
 
+    Vector2 InitialVector()
+    {
+        float scale = Random.Range(-1f, 1f);
+        if (scale >= 0)
+        {
+            scale = GaussianRange(5f, 6f);
+        }
+        else
+        {
+            scale = GaussianRange(-6f, -5f);
+        }
+        Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(Star.transform.position - transform.position);
+        return initialForce;
+    }
+
     void SimulateAttraction()
     {
-        if (attractAll)
-        {
-            for (int i = 0; i < bodies.Length; i++)
-            {
-                if (bodies[i] == null)
-                    continue;
-
-                if (bodies[i].rb != rb)
-                {
-                    Vector2 force = Attract(bodies[i].rb);
-                    bodies[i].rb.AddForce(force, ForceMode.Force);
-                }
-            }
-        }
-
         if (starShip != null)
         {
             Vector2 shipForce = Attract(starShip);
             starShip.AddForce(shipForce, ForceMode.Force);
         }
-    }
 
-    void CalculateMass()
-    {
-        radius = sphereCollider.radius * transform.localScale.x / 3f;
-        volume = (4 / 3) * Mathf.PI * Mathf.Pow(radius, 3);
-        mass = volume * density;
-        rb.mass = mass;
+        if (!attractAll)
+            return;
+
+        for (int i = 0; i < bodies.Length; i++)
+        {
+            if (bodies[i] == null)
+                continue;
+
+            if (bodies[i].rb != rb)
+            {
+                Vector2 force = Attract(bodies[i].rb);
+                bodies[i].rb.AddForce(force, ForceMode.Force);
+            }
+        }
+
     }
 
     Vector2 Attract(Rigidbody toAttract)
@@ -125,16 +117,13 @@ public class Attractor : MonoBehaviour
         return force;
     }
 
-    //void CheckList()
-    //{
-    //    for (int i = 0; i < bodies.Count; i++)
-    //    {
-    //        if (bodies[i] != null)
-    //            return;
-
-    //        bodies.RemoveAt(i);
-    //    }
-    //}
+    float CalculateMass()
+    {
+        radius = sphereCollider.radius * transform.localScale.x / 3f;
+        volume = (4 / 3) * Mathf.PI * Mathf.Pow(radius, 3);
+        mass = volume * density;
+        return mass;
+    }
 
     float GaussianRange(float min, float max)
     {
@@ -142,10 +131,13 @@ public class Attractor : MonoBehaviour
         return gaussianRandom;
     }
 
-    private void OnTriggerEnter(Collider other)
+    #region Triggers
+
+    void OnTriggerEnter(Collider other)
     {
         if (!optionManager.destroyOnImpact)
             return;
+
         if (other.gameObject.transform.localScale.x > gameObject.transform.localScale.x)
         {
             Destroy(gameObject);
@@ -159,4 +151,6 @@ public class Attractor : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    #endregion
 }
