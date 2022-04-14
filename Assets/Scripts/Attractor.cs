@@ -10,13 +10,15 @@ public class Attractor : MonoBehaviour
     [SerializeField] bool attractAll;
     [SerializeField] bool shouldLaunch;
 
-    List<Attractor> bodies;
+    Attractor[] bodies;
+
+    [System.NonSerialized] public Rigidbody rb;
 
     GameObject Star;
-    Rigidbody rb;
     SphereCollider sphereCollider;
+    OptionManager optionManager;
 
-    const float G = .667f;
+    const float G = 1.67f;
 
     float radius;
     float volume;
@@ -42,6 +44,7 @@ public class Attractor : MonoBehaviour
     void OnEnable()
     {
         Star = GameObject.Find("Star");
+        optionManager = GameObject.Find("OptionManager").GetComponent<OptionManager>();
         rb = gameObject.GetComponent<Rigidbody>();
         sphereCollider = gameObject.GetComponent<SphereCollider>();
     }
@@ -49,11 +52,12 @@ public class Attractor : MonoBehaviour
     void Start()
     {
         CalculateMass();
-        bodies = FindObjectsOfType<Attractor>().ToList();
+        bodies = FindObjectsOfType<Attractor>();
 
         if (shouldLaunch)
         {
             Vector2 initialForce = InitialVector();
+            rb.velocity = initialForce;
             rb.AddForce(initialForce, ForceMode.Impulse);
         }
     }
@@ -63,13 +67,13 @@ public class Attractor : MonoBehaviour
         float scale = Random.Range(-1f, 1f);
         if (scale >= 0)
         {
-            scale = Random.Range(5f, 10f);
+            scale = Random.Range(5f, 6f);
         }
         else
         {
-            scale = Random.Range(-10f, -5f);
+            scale = Random.Range(-6f, -5f);
         }
-        Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position).normalized * Mathf.Pow(mass, 2) * scale / Vector3.Magnitude(Star.transform.position - transform.position);
+        Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(Star.transform.position - transform.position);
         return initialForce;
     }
 
@@ -82,12 +86,15 @@ public class Attractor : MonoBehaviour
     {
         if (attractAll)
         {
-            for (int i = 0; i < bodies.Count; i++)
+            for (int i = 0; i < bodies.Length; i++)
             {
+                if (bodies[i] == null)
+                    continue;
+
                 if (bodies[i].rb != rb)
                 {
                     Vector2 force = Attract(bodies[i].rb);
-                    bodies[i].rb.AddForce(force, ForceMode.Acceleration);
+                    bodies[i].rb.AddForce(force, ForceMode.Force);
                 }
             }
         }
@@ -111,17 +118,38 @@ public class Attractor : MonoBehaviour
     {
         Vector2 force = rb.position - toAttract.position;
         float distance = force.magnitude;
-        distance = Mathf.Clamp(distance, 10f, 100f);
+        distance = Mathf.Clamp(distance, 1f, 100f);
         force.Normalize();
         float strength = G * (mass * toAttract.mass) / Mathf.Pow(distance, 2);
         force *= strength;
         return force;
     }
 
+    //void CheckList()
+    //{
+    //    for (int i = 0; i < bodies.Count; i++)
+    //    {
+    //        if (bodies[i] != null)
+    //            return;
+
+    //        bodies.RemoveAt(i);
+    //    }
+    //}
+
     float GaussianRange(float min, float max)
     {
         float gaussianRandom = Random.Range(Random.Range(min, max), Random.Range(min, max));
         return gaussianRandom;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!optionManager.destroyOnImpact)
+            return;
+        if (other.gameObject.transform.localScale.x > gameObject.transform.localScale.x)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
