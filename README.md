@@ -1,3 +1,3 @@
 # GravitySmasher
 
-[WebGL Build](https://mcdonaldduncan.github.io/GravitySmasher/main/Builds/index.html)
+[WebGL Build](https://mcdonaldduncan.github.io/GravitySmasher/Builds/index.html)
