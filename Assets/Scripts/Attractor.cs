@@ -110,7 +110,7 @@ public class Attractor : MonoBehaviour
     {
         Vector2 force = rb.position - toAttract.position;
         float distance = force.magnitude;
-        distance = Mathf.Clamp(distance, 1f, 100f);
+        distance = Mathf.Clamp(distance, .1f, 100f);
         force.Normalize();
         float strength = G * (mass * toAttract.mass) / Mathf.Pow(distance, 2);
         force *= strength;
@@ -127,29 +127,21 @@ public class Attractor : MonoBehaviour
 
     float GaussianRange(float min, float max)
     {
-        float gaussianRandom = Random.Range(Random.Range(min, max), Random.Range(min, max));
-        return gaussianRandom;
+        return Random.Range(Random.Range(min, max), Random.Range(min, max));
     }
 
     #region Triggers
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Star"))
+            Destroy(gameObject);
+
         if (!optionManager.destroyOnImpact)
             return;
 
         if (other.gameObject.transform.localScale.x > gameObject.transform.localScale.x)
-        {
             Destroy(gameObject);
-        }
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Star"))
-        {
-            Destroy(gameObject);
-        }
     }
 
     #endregion
