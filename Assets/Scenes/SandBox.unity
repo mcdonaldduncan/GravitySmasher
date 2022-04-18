@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starShip: {fileID: 0}
-  density: 1
+  density: 2
   attractAll: 1
   shouldLaunch: 1
 --- !u!54 &371801672
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starShip: {fileID: 0}
-  density: 1
+  density: 2
   attractAll: 1
   shouldLaunch: 1
 --- !u!54 &1228391089
@@ -3395,7 +3395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starShip: {fileID: 0}
-  density: 1
+  density: 2
   attractAll: 1
   shouldLaunch: 1
 --- !u!54 &1895720361
@@ -3655,7 +3655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starShip: {fileID: 0}
-  density: 1
+  density: 3
   attractAll: 1
   shouldLaunch: 1
 --- !u!54 &1929756758
