@@ -7,8 +7,10 @@ public class Attractor : MonoBehaviour
 {
     [SerializeField] Rigidbody starShip;
     [SerializeField] float density;
+    [SerializeField] float maxDistance;
     [SerializeField] bool attractAll;
     [SerializeField] bool shouldLaunch;
+    [SerializeField] bool limitDistance;
 
     Attractor[] bodies;
 
@@ -85,8 +87,15 @@ public class Attractor : MonoBehaviour
     {
         if (starShip != null)
         {
-            Vector2 shipForce = Attract(starShip);
-            starShip.AddForce(shipForce, ForceMode.Force);
+            if (limitDistance)
+            {
+                if (Vector2.Distance(rb.position, starShip.position) < maxDistance)
+                    ApplyGravity(starShip);
+            }
+            else
+            {
+                ApplyGravity(starShip);
+            }
         }
 
         if (!attractAll)
@@ -99,11 +108,15 @@ public class Attractor : MonoBehaviour
 
             if (bodies[i].rb != rb)
             {
-                Vector2 force = Attract(bodies[i].rb);
-                bodies[i].rb.AddForce(force, ForceMode.Force);
+                ApplyGravity(bodies[i].rb);
             }
         }
+    }
 
+    void ApplyGravity(Rigidbody target)
+    {
+        Vector2 force = Attract(target);
+        target.AddForce(force, ForceMode.Force);
     }
 
     Vector2 Attract(Rigidbody toAttract)
