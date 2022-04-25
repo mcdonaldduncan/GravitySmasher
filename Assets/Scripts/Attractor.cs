@@ -6,6 +6,7 @@ using UnityEngine;
 public class Attractor : MonoBehaviour
 {
     [SerializeField] Rigidbody starShip;
+    [SerializeField] GameObject limitIndicator;
     [SerializeField] float density;
     [SerializeField] float maxDistance;
     [SerializeField] bool attractAll;
@@ -60,6 +61,12 @@ public class Attractor : MonoBehaviour
             Vector2 initialForce = InitialVector();
             rb.velocity = initialForce;
             rb.AddForce(initialForce, ForceMode.Impulse);
+        }
+        if (limitDistance)
+        {
+            GameObject indicator = Instantiate(limitIndicator);
+            indicator.transform.position = transform.position;
+            indicator.transform.localScale = new Vector3(maxDistance * 2, maxDistance * 2, maxDistance * 2);
         }
     }
 
