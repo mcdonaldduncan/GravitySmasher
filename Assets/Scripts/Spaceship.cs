@@ -50,7 +50,7 @@ public class Spaceship : MonoBehaviour
     {
         Vector2 force = startingPosition - (Vector2)rb.position;
         float distance = force.magnitude;
-        distance = Mathf.Clamp(distance, 10f, 50f);
+        distance = Mathf.Clamp(distance, 5f, 10f);
         force.Normalize();
         force *= distance * launchForce;
         rb.AddForce(force, ForceMode.Impulse);

@@ -66,7 +66,7 @@ public class Attractor : MonoBehaviour
         {
             GameObject indicator = Instantiate(limitIndicator);
             indicator.transform.position = transform.position;
-            indicator.transform.localScale = new Vector3(maxDistance * 2, maxDistance * 2, maxDistance * 2);
+            indicator.transform.localScale = new Vector3(maxDistance * 2f, maxDistance * 2f, 1f);
         }
     }
 
@@ -86,6 +86,12 @@ public class Attractor : MonoBehaviour
         {
             scale = GaussianRange(-6f, -5f);
         }
+
+        if (mass > 10f)
+        {
+            scale = .5f;
+        }
+
         Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(Star.transform.position - transform.position);
         return initialForce;
     }

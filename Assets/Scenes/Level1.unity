@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 42eaf2c5dbb13dc498f15df5a5b05fda, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: a4be220830e90ea4eb88b48b7fd376ce, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06615649, g: 0.15344906, b: 0.0577884, a: 1}
+  m_IndirectSpecularColor: {r: 0.17316318, g: 0.16457182, b: 0.29665613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -354,7 +354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273513117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.6, y: -17.7, z: 0}
+  m_LocalPosition: {x: 16.74, y: -13.85, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 2031519807}
@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starShip: {fileID: 1535114784}
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
-  density: 250
+  density: 315
   maxDistance: 10
   attractAll: 0
   shouldLaunch: 0
@@ -1570,7 +1570,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 3
 --- !u!135 &1535114785
 SphereCollider:
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8b394ec606bd448887d23a00a2aa28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 2
+  launchForce: 5
 --- !u!1 &1594211657
 GameObject:
   m_ObjectHideFlags: 0
