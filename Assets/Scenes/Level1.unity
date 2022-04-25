@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starShip: {fileID: 1535114784}
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
-  density: 300
+  density: 400
   maxDistance: 6
   attractAll: 0
   shouldLaunch: 0

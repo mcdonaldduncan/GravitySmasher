@@ -7,12 +7,17 @@ public class Spaceship : MonoBehaviour
     [SerializeField] float launchForce;
 
     Rigidbody rb;
+    LineRenderer line;
+
     Vector2 startingPosition;
 
     bool mouseDrag;
     
     void Start()
     {
+        line = gameObject.AddComponent<LineRenderer>();
+        line.material = new Material(Shader.Find("Diffuse"));
+        line.material.color = Color.red;
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         startingPosition = rb.position;
@@ -20,27 +25,32 @@ public class Spaceship : MonoBehaviour
 
     void Update()
     {
+        DragProjectile();
+
+    }
+
+    void DragProjectile()
+    {
         if (mouseDrag)
         {
             Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mp;
-            Vector3 anticipatedForce = (Vector3)startingPosition - transform.position;
-            //transform.rotation = Quaternion.LookRotation(new Vector3(anticipatedForce.x, anticipatedForce.y + 90, anticipatedForce.z - 90));
+            Vector3 anticipatedForce = transform.position - (Vector3)startingPosition;
+            line.SetPosition(0, transform.position);
+            line.SetPosition(1, startingPosition - (Vector2)anticipatedForce * 4f);
+            line.endWidth = .01f;
         }
-
-
-        //transform.rotation = Quaternion.LookRotation(rb.velocity);
-        //Vector3 eulerRotation = new Vector3(rotation.eulerAngles.x, rotation.eulerAngles.y + 90, rotation.eulerAngles.z - 90);
-        //transform.rotation = Quaternion.LookRotation(eulerRotation);
     }
 
     private void OnMouseDown()
     {
         mouseDrag = true;
+        line.enabled = true;
     }
 
     private void OnMouseUp()
     {
+        line.enabled = false;
         mouseDrag = false;
         rb.isKinematic = false;
         Launch();

@@ -66,7 +66,7 @@ public class Attractor : MonoBehaviour
         {
             GameObject indicator = Instantiate(limitIndicator);
             indicator.transform.position = transform.position;
-            indicator.transform.localScale = new Vector3(maxDistance * 2f, maxDistance * 2f, 1f);
+            indicator.transform.localScale = new Vector3(maxDistance * 2f, maxDistance * 2f, maxDistance * 2f);
         }
     }
 
@@ -78,6 +78,7 @@ public class Attractor : MonoBehaviour
     Vector2 InitialVector()
     {
         float scale = Random.Range(-1f, 1f);
+
         if (scale >= 0)
         {
             scale = GaussianRange(5f, 6f);
