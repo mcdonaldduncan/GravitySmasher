@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17316318, g: 0.16457182, b: 0.29665613, a: 1}
+  m_IndirectSpecularColor: {r: 0.17323539, g: 0.16459554, b: 0.2966911, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -683,7 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starShip: {fileID: 1535114784}
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
-  density: 200
+  density: 250
   maxDistance: 10
   attractAll: 0
   shouldLaunch: 0
@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starShip: {fileID: 1535114784}
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
-  density: 315
+  density: 300
   maxDistance: 10
   attractAll: 0
   shouldLaunch: 0
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starShip: {fileID: 1535114784}
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
-  density: 400
+  density: 500
   maxDistance: 6
   attractAll: 0
   shouldLaunch: 0
@@ -1661,6 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8b394ec606bd448887d23a00a2aa28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchMaterial: {fileID: 2100000, guid: 78a6e311756bae54eb2b2560b7477cbf, type: 2}
   launchForce: 5
 --- !u!1 &1594211657
 GameObject:

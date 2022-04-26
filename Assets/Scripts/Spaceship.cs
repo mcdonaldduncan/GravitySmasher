@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spaceship : MonoBehaviour
 {
+    [SerializeField] Material launchMaterial;
     [SerializeField] float launchForce;
 
     Rigidbody rb;
@@ -16,8 +17,7 @@ public class Spaceship : MonoBehaviour
     void Start()
     {
         line = gameObject.AddComponent<LineRenderer>();
-        line.material = new Material(Shader.Find("Diffuse"));
-        line.material.color = Color.red;
+        line.material = launchMaterial;
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         startingPosition = rb.position;
@@ -26,7 +26,6 @@ public class Spaceship : MonoBehaviour
     void Update()
     {
         DragProjectile();
-
     }
 
     void DragProjectile()
