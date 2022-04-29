@@ -147,7 +147,7 @@ public class Attractor : MonoBehaviour
     float CalculateMass()
     {
         radius = sphereCollider.radius * transform.localScale.x / 3f;
-        volume = (4 / 3) * Mathf.PI * Mathf.Pow(radius, 3);
+        volume = (4f / 3f) * Mathf.PI * Mathf.Pow(radius, 3);
         mass = volume * density;
         return mass;
     }
