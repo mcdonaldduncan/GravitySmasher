@@ -5,47 +5,34 @@ using UnityEngine;
 
 public class Attractor : MonoBehaviour
 {
+    // Objects assigned in the inspector
     [SerializeField] Rigidbody starShip;
     [SerializeField] GameObject limitIndicator;
+
+    // Fields designated in the inspector
     [SerializeField] float density;
     [SerializeField] float maxDistance;
     [SerializeField] bool attractAll;
     [SerializeField] bool shouldLaunch;
     [SerializeField] bool limitDistance;
 
-    Attractor[] bodies;
-
     [System.NonSerialized] public Rigidbody rb;
 
-    GameObject Star;
+    // Objects assigned at runtime
     SphereCollider sphereCollider;
     OptionManager optionManager;
+    DataManager dataManager;
 
+    // Arbitrarily defined gravitational constant
     const float G = 1.67f;
     float radius;
     float volume;
     float mass;
 
-    Dictionary<string, float> bodyType = new Dictionary<string, float>
-    {
-        {"Neutron Star", 999999999999999.9f },
-        {"Black Hole", 999999999999999999999.9f },
-        {"Red Giant", 907.185f },
-        {"Sun", 1.409f },
-        {"Jupiter", 1.3262f },
-        {"Saturn", .6871f },
-        {"Uranus", 1.270f },
-        {"Neptune", 1.638f },
-        {"Earth", 5.5136f },
-        {"Venus", 5.243f },
-        {"Mars", 3.9341f },
-        {"Mercury", 5.4291f },
-        {"Luna", 3.344f }
-    };
-
+    // Cache relevant objects and scripts
     void OnEnable()
     {
-        Star = GameObject.Find("Star");
+        dataManager = GameObject.Find("DataManager").GetComponent<DataManager>();
         optionManager = GameObject.Find("OptionManager").GetComponent<OptionManager>();
         rb = gameObject.GetComponent<Rigidbody>();
         sphereCollider = gameObject.GetComponent<SphereCollider>();
@@ -54,14 +41,16 @@ public class Attractor : MonoBehaviour
     void Start()
     {
         rb.mass = CalculateMass();
-        bodies = FindObjectsOfType<Attractor>();
 
+        // Launch the body if shouldLaunch is selected
         if (shouldLaunch)
         {
             Vector2 initialForce = InitialVector();
             rb.velocity = initialForce;
             rb.AddForce(initialForce, ForceMode.Impulse);
         }
+
+        // Create a visual representation of the limited range of attraction
         if (limitDistance)
         {
             GameObject indicator = Instantiate(limitIndicator);
@@ -75,6 +64,7 @@ public class Attractor : MonoBehaviour
         SimulateAttraction();
     }
 
+    // Calculate an initial vector to launch at perpendicular to the central star
     Vector2 InitialVector()
     {
         float scale = Random.Range(-1f, 1f);
@@ -93,7 +83,7 @@ public class Attractor : MonoBehaviour
             scale = .5f;
         }
 
-        Vector2 initialForce = Vector2.Perpendicular(Star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(Star.transform.position - transform.position);
+        Vector2 initialForce = Vector2.Perpendicular(dataManager.star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(dataManager.star.transform.position - transform.position);
         return initialForce;
     }
 
@@ -101,6 +91,7 @@ public class Attractor : MonoBehaviour
     {
         if (starShip != null)
         {
+            // If gravitational atraction on the starship should be limited only apply within designated distance
             if (limitDistance)
             {
                 if (Vector2.Distance(rb.position, starShip.position) < maxDistance)
@@ -112,27 +103,31 @@ public class Attractor : MonoBehaviour
             }
         }
 
+        // Return if the attractor should only attract the spaceship, else attract each body in list
         if (!attractAll)
             return;
 
-        for (int i = 0; i < bodies.Length; i++)
+        // Loop through all bodies in the Data Manager
+        for (int i = 0; i < dataManager.bodies.Length; i++)
         {
-            if (bodies[i] == null)
+            if (dataManager.bodies[i] == null)
                 continue;
 
-            if (bodies[i].rb != rb)
+            if (dataManager.bodies[i].rb != rb)
             {
-                ApplyGravity(bodies[i].rb);
+                ApplyGravity(dataManager.bodies[i].rb);
             }
         }
     }
 
+    // Method to call application of calculated force
     void ApplyGravity(Rigidbody target)
     {
         Vector2 force = Attract(target);
         target.AddForce(force, ForceMode.Force);
     }
 
+    // Calculate gravitational attraction of one body on another
     Vector2 Attract(Rigidbody toAttract)
     {
         Vector2 force = rb.position - toAttract.position;
@@ -144,14 +139,16 @@ public class Attractor : MonoBehaviour
         return force;
     }
 
+    // Calculate the mass of a planetary body by calculating volume * density
     float CalculateMass()
     {
-        radius = sphereCollider.radius * transform.localScale.x / 3f;
+        radius = sphereCollider.radius * transform.localScale.x / 2f;
         volume = (4f / 3f) * Mathf.PI * Mathf.Pow(radius, 3);
         mass = volume * density;
         return mass;
     }
 
+    // Generate a standard deviation of numbers by taking a random range over two random ranges
     float GaussianRange(float min, float max)
     {
         return Random.Range(Random.Range(min, max), Random.Range(min, max));
@@ -159,6 +156,7 @@ public class Attractor : MonoBehaviour
 
     #region Triggers
 
+    // Check trigger collision, destroy on impact with central star or all other objects if selected
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Star"))
