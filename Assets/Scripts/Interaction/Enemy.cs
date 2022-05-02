@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     DataManager dataManager;
     UIManager uiManager;
 
+    // Assign datamanager and uimanager
     private void Start()
     {
         dataManager = Utility.AssignDataManager();

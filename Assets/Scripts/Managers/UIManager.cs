@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 
     DataManager dataManager;
 
+    // Assign data manager and update score text on start
     void Start()
     {
         dataManager = Utility.AssignDataManager();

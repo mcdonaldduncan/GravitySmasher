@@ -16,11 +16,13 @@ public class Utility : MonoBehaviour
         return GameObject.Find("UIManager").GetComponent<UIManager>();
     }
 
+    // Utility function for assigning the LevelManager
     public static LevelManager AssignLevelManager()
     {
         return GameObject.Find("LevelManager").GetComponent<LevelManager>();
     }
 
+    // Utility method for finding maximum and minimum screen bounds
     public static Vector2 FindWindowLimits()
     {
         return Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));

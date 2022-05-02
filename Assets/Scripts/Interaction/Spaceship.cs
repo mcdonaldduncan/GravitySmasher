@@ -84,6 +84,7 @@ public class Spaceship : MonoBehaviour
         IncrementProjectilesUsed();
     }
 
+    // Check if the projectile has left the window limits
     void CheckWindowLimits()
     {
         if (transform.position.x > maximumPosition.x || transform.position.x < -maximumPosition.x)
@@ -97,7 +98,7 @@ public class Spaceship : MonoBehaviour
         }
     }
 
-
+    // Reset the projectile to start position and set it to be ready for launch
     void ResetProjectile()
     {
         rb.isKinematic = true;
@@ -106,11 +107,13 @@ public class Spaceship : MonoBehaviour
         transform.position = startingPosition;
     }
 
+    // Reset projectile on collision
     private void OnCollisionEnter(Collision collision)
     {
         ResetProjectile();
     }
 
+    // Increment the number of projectiles used
     void IncrementProjectilesUsed()
     {
         dataManager.projectilesUsed++;

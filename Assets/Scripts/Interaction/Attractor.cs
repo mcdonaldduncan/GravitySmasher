@@ -87,6 +87,7 @@ public class Attractor : MonoBehaviour
         return initialForce;
     }
 
+    // Method for simulating the attraction of this body on the spaceship/projectile and onto all other bodies if option is selected
     void SimulateAttraction()
     {
         if (starShip != null)

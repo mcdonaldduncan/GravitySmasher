@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] int nextLevel;
 
-    // Move to next level
+    // Move to next level, not yet implemented
     public void AdvanceLevel()
     {
         SceneManager.LoadScene(nextLevel);
