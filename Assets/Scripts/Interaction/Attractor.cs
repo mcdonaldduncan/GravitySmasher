@@ -16,6 +16,7 @@ public class Attractor : MonoBehaviour
     [SerializeField] bool shouldLaunch;
     [SerializeField] bool limitDistance;
 
+    // rb must be public for accesibility but does not need to be visible in inspector
     [System.NonSerialized] public Rigidbody rb;
 
     // Objects assigned at runtime
@@ -25,6 +26,8 @@ public class Attractor : MonoBehaviour
 
     // Arbitrarily defined gravitational constant
     const float G = .67f;
+
+    // values to determine strength of gravitational attraction
     float radius;
     float volume;
     float mass;

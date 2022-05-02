@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Utility;
 
 public class Spaceship : MonoBehaviour
 {
@@ -26,14 +27,14 @@ public class Spaceship : MonoBehaviour
     // Cache relevant objects and assign runtime variables
     void Start()
     {
-        dataManager = Utility.AssignDataManager();
-        uiManager = Utility.AssignUIManager();
+        dataManager = AssignDataManager();
+        uiManager = AssignUIManager();
+        maximumPosition = FindWindowLimits();
         line = gameObject.AddComponent<LineRenderer>();
         line.material = launchMaterial;
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         startingPosition = rb.position;
-        maximumPosition = Utility.FindWindowLimits();
     }
 
     void Update()
@@ -113,7 +114,7 @@ public class Spaceship : MonoBehaviour
         ResetProjectile();
     }
 
-    // Increment the number of projectiles used
+    // Increment the number of projectiles used and update UI
     void IncrementProjectilesUsed()
     {
         dataManager.projectilesUsed++;

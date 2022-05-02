@@ -7,9 +7,32 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] int nextLevel;
 
-    // Move to next level, not yet implemented
-    public void AdvanceLevel()
+    DataManager dataManager;
+    WaitForSeconds delay = new WaitForSeconds(2);
+
+    bool isLoading;
+
+    private void Start()
     {
+        dataManager = Utility.AssignDataManager();
+    }
+
+    public void CheckAdvance()
+    {
+        if (isLoading)
+            return;
+
+        if (dataManager.enemiesDefeated >= dataManager.enemies.Length)
+        {
+            StartCoroutine(AdvanceLevelAfterDelay());
+        }
+    }
+
+    // Move to next level after delay
+    IEnumerator AdvanceLevelAfterDelay()
+    {
+        yield return delay;
+        dataManager.SetPersistentData();
         SceneManager.LoadScene(nextLevel);
     }
 

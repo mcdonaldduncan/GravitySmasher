@@ -7,6 +7,7 @@ public class DataManager : MonoBehaviour
     // Data to be handled by the data manager
     [System.NonSerialized] public GameObject star;
     [System.NonSerialized] public Attractor[] bodies;
+    [System.NonSerialized] public Enemy[] enemies;
     [System.NonSerialized] public int enemiesDefeated;
     [System.NonSerialized] public int projectilesUsed;
 
@@ -14,6 +15,7 @@ public class DataManager : MonoBehaviour
     void OnEnable()
     {
         bodies = FindObjectsOfType<Attractor>();
+        enemies = FindObjectsOfType<Enemy>();
         star = GameObject.Find("Star");
         enemiesDefeated = PlayerPrefs.GetInt("EnemiesDefeated", 0);
         projectilesUsed = PlayerPrefs.GetInt("ProjectileCount", 0);

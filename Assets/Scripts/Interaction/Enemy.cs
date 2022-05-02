@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Utility;
 
 public class Enemy : MonoBehaviour
 {
     DataManager dataManager;
     UIManager uiManager;
+    LevelManager levelManager;
 
-    // Assign datamanager and uimanager
+    // Assign dataManager and uiManager
     private void Start()
     {
-        dataManager = Utility.AssignDataManager();
-        uiManager = Utility.AssignUIManager();
+        dataManager = AssignDataManager();
+        uiManager = AssignUIManager();
+        levelManager = AssignLevelManager();
     }
 
     // On trigger enter, destroy gameobject, increment score and call UpdateScore()
@@ -20,5 +23,6 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         dataManager.enemiesDefeated++;
         uiManager.UpdateScore();
+        levelManager.CheckAdvance();
     }
 }
