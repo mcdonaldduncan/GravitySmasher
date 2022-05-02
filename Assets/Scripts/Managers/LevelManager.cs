@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         dataManager = Utility.AssignDataManager();
+        isLoading = false;
     }
 
     public void CheckAdvance()
@@ -25,6 +26,7 @@ public class LevelManager : MonoBehaviour
         if (dataManager.enemiesDefeated >= dataManager.enemies.Length)
         {
             StartCoroutine(AdvanceLevelAfterDelay());
+            isLoading = true;
         }
     }
 
@@ -32,7 +34,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator AdvanceLevelAfterDelay()
     {
         yield return delay;
-        dataManager.SetPersistentData();
+        //dataManager.SetPersistentData();
         SceneManager.LoadScene(nextLevel);
     }
 
@@ -40,5 +42,10 @@ public class LevelManager : MonoBehaviour
     public void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 }

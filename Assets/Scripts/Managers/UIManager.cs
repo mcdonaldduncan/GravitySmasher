@@ -19,6 +19,10 @@ public class UIManager : MonoBehaviour
     // Update the score text
     public void UpdateScore()
     {
-        scoreText.text = $"Projectiles Used:{dataManager.projectilesUsed}\nEnemies Destroyed: {dataManager.enemiesDefeated}";
+        if (scoreText != null)
+        {
+            scoreText.text = $"Projectiles Used:{dataManager.projectilesUsed}\nEnemies Destroyed: {dataManager.enemiesDefeated}";
+        }
     }
+
 }

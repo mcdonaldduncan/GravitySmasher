@@ -65,6 +65,12 @@ public class Attractor : MonoBehaviour
     void FixedUpdate()
     {
         SimulateAttraction();
+        VelocityRotation();
+    }
+
+    void VelocityRotation()
+    {
+        transform.Rotate(rb.velocity / 10f);
     }
 
     // Calculate an initial vector to launch at perpendicular to the central star

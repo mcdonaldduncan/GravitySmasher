@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 762590715592463145}
   - component: {fileID: 8632910688423602463}
   - component: {fileID: 2662414507659400678}
+  - component: {fileID: -8265368771197986452}
   m_Layer: 0
   m_Name: Temperate_Design1
   m_TagString: Untagged
@@ -51,9 +52,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,3 +84,23 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8265368771197986452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4381472403175285050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8116d0c2b1e549640904724fc308d806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starShip: {fileID: 0}
+  limitIndicator: {fileID: 0}
+  density: 1
+  maxDistance: 0
+  attractAll: 1
+  shouldLaunch: 1
+  limitDistance: 0
