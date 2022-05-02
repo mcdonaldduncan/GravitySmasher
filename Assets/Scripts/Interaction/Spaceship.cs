@@ -19,7 +19,7 @@ public class Spaceship : MonoBehaviour
 
     // Starting position of the spaceship assigned at runtime, maximum bounds of screen assigned at runtime
     Vector2 startingPosition;
-    Vector2 maximumPosition;
+    [SerializeField] Vector2 maximumPosition;
 
     // Boolean to handle mouse being dragged
     bool mouseDrag;
