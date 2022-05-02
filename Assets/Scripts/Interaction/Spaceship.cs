@@ -13,9 +13,12 @@ public class Spaceship : MonoBehaviour
     // Objects assigned at runtime
     Rigidbody rb;
     LineRenderer line;
+    DataManager dataManager;
+    UIManager uiManager;
 
-    // Starting position of the spaceship assigned at runtime
+    // Starting position of the spaceship assigned at runtime, maximum bounds of screen assigned at runtime
     Vector2 startingPosition;
+    Vector2 maximumPosition;
 
     // Boolean to handle mouse being dragged
     bool mouseDrag;
@@ -23,16 +26,20 @@ public class Spaceship : MonoBehaviour
     // Cache relevant objects and assign runtime variables
     void Start()
     {
+        dataManager = Utility.AssignDataManager();
+        uiManager = Utility.AssignUIManager();
         line = gameObject.AddComponent<LineRenderer>();
         line.material = launchMaterial;
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         startingPosition = rb.position;
+        maximumPosition = Utility.FindWindowLimits();
     }
 
     void Update()
     {
         DragProjectile();
+        CheckWindowLimits();
     }
 
     // Snap object to mouse position after clciking on object, generate a line to indicate anticipated launch
@@ -70,9 +77,45 @@ public class Spaceship : MonoBehaviour
     {
         Vector2 force = startingPosition - (Vector2)rb.position;
         float distance = force.magnitude;
-        distance = Mathf.Clamp(distance, 5f, 10f);
+        distance = Mathf.Clamp(distance, 5f, 20f);
         force.Normalize();
         force *= distance * launchForce;
         rb.AddForce(force, ForceMode.Impulse);
+        IncrementProjectilesUsed();
     }
+
+    void CheckWindowLimits()
+    {
+        if (transform.position.x > maximumPosition.x || transform.position.x < -maximumPosition.x)
+        {
+            ResetProjectile();
+        }
+
+        if (transform.position.y > maximumPosition.y || transform.position.y < -maximumPosition.y)
+        {
+            ResetProjectile();
+        }
+    }
+
+
+    void ResetProjectile()
+    {
+        rb.isKinematic = true;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        transform.position = startingPosition;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        ResetProjectile();
+    }
+
+    void IncrementProjectilesUsed()
+    {
+        dataManager.projectilesUsed++;
+        uiManager.UpdateScore();
+    }
+
+    
 }

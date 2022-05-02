@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Summary
+ * This script is unused, it was made during class when you first mentioned the idea of a beacon follower
+ * Will remove before final build
+ */
+
+
 public class BeaconFollower : MonoBehaviour
 {
     [SerializeField] List<GameObject> beacons;
@@ -21,7 +27,6 @@ public class BeaconFollower : MonoBehaviour
     {
         FollowBeacons();
     }
-
 
     int FindClosestIndex()
     {

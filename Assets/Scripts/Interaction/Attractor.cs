@@ -24,7 +24,7 @@ public class Attractor : MonoBehaviour
     DataManager dataManager;
 
     // Arbitrarily defined gravitational constant
-    const float G = 1.67f;
+    const float G = .67f;
     float radius;
     float volume;
     float mass;
@@ -32,7 +32,7 @@ public class Attractor : MonoBehaviour
     // Cache relevant objects and scripts
     void OnEnable()
     {
-        dataManager = GameObject.Find("DataManager").GetComponent<DataManager>();
+        dataManager = Utility.AssignDataManager();
         optionManager = GameObject.Find("OptionManager").GetComponent<OptionManager>();
         rb = gameObject.GetComponent<Rigidbody>();
         sphereCollider = gameObject.GetComponent<SphereCollider>();
@@ -42,7 +42,7 @@ public class Attractor : MonoBehaviour
     {
         rb.mass = CalculateMass();
 
-        // Launch the body if shouldLaunch is selected
+        // Launch the body if shouldLaunch is selected, this is only used for the sanbox example
         if (shouldLaunch)
         {
             Vector2 initialForce = InitialVector();
@@ -80,10 +80,10 @@ public class Attractor : MonoBehaviour
 
         if (mass > 10f)
         {
-            scale = .5f;
+            scale *= .3f;
         }
 
-        Vector2 initialForce = Vector2.Perpendicular(dataManager.star.transform.position - transform.position) * mass * scale / Vector3.Magnitude(dataManager.star.transform.position - transform.position);
+        Vector2 initialForce = Mathf.Sqrt(mass) * scale * Vector2.Perpendicular(dataManager.star.transform.position - transform.position) / Vector3.Magnitude(dataManager.star.transform.position - transform.position);
         return initialForce;
     }
 
