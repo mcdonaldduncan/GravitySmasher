@@ -27,6 +27,8 @@ public class Spaceship : MonoBehaviour
 
     private void OnEnable()
     {
+        rb = GetComponent<Rigidbody>();
+        rb.isKinematic = true;
         attractionData = new AttractionData(transform.position, rb.mass);
     }
 
@@ -37,8 +39,6 @@ public class Spaceship : MonoBehaviour
         maximumPosition = FindWindowLimits();
         line = gameObject.AddComponent<LineRenderer>();
         line.material = launchMaterial;
-        rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true;
         startingPosition = rb.position;
     }
 
