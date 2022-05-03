@@ -5,14 +5,14 @@ using static Utility;
 
 public class Enemy : MonoBehaviour
 {
-    DataManager dataManager;
+    //DataManager dataManager;
     UIManager uiManager;
     LevelManager levelManager;
 
     // Assign dataManager and uiManager
     private void Start()
     {
-        dataManager = AssignDataManager();
+        //dataManager = AssignDataManager();
         uiManager = AssignUIManager();
         levelManager = AssignLevelManager();
     }
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        dataManager.enemiesDefeated++;
+        DataManager.instance.enemiesDefeated++;
         uiManager.UpdateScore();
         levelManager.CheckAdvance();
     }

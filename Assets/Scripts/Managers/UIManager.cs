@@ -7,12 +7,12 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] Text scoreText;
 
-    DataManager dataManager;
+    //DataManager dataManager;
 
     // Assign data manager and update score text on start
     void Start()
     {
-        dataManager = Utility.AssignDataManager();
+        //dataManager = Utility.AssignDataManager();
         UpdateScore();
     }
 
@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = $"Projectiles Used:{dataManager.projectilesUsed}\nEnemies Destroyed: {dataManager.enemiesDefeated}";
+            scoreText.text = $"Projectiles Used:{DataManager.instance.projectilesUsed}\nEnemies Destroyed: {DataManager.instance.enemiesDefeated}";
         }
     }
 

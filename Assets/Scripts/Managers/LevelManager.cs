@@ -7,14 +7,14 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] int nextLevel;
 
-    DataManager dataManager;
+    //DataManager dataManager;
     WaitForSeconds delay = new WaitForSeconds(2);
 
     bool isLoading;
 
     private void Start()
     {
-        dataManager = Utility.AssignDataManager();
+        //dataManager = Utility.AssignDataManager();
         isLoading = false;
     }
 
@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
         if (isLoading)
             return;
 
-        if (dataManager.enemiesDefeated >= dataManager.enemies.Length)
+        if (DataManager.instance.enemiesDefeated >= DataManager.instance.enemies.Length)
         {
             StartCoroutine(AdvanceLevelAfterDelay());
             isLoading = true;

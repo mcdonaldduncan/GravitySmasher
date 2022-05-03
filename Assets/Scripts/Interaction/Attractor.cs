@@ -22,7 +22,6 @@ public class Attractor : MonoBehaviour
     // Objects assigned at runtime
     SphereCollider sphereCollider;
     OptionManager optionManager;
-    DataManager dataManager;
 
     // Arbitrarily defined gravitational constant
     const float G = .67f;
@@ -30,36 +29,21 @@ public class Attractor : MonoBehaviour
     // values to determine strength of gravitational attraction
     float radius;
     float volume;
-    float mass;
+    internal float mass;
 
     // Cache relevant objects and scripts
     void OnEnable()
     {
-        dataManager = Utility.AssignDataManager();
         optionManager = GameObject.Find("OptionManager").GetComponent<OptionManager>();
         rb = gameObject.GetComponent<Rigidbody>();
         sphereCollider = gameObject.GetComponent<SphereCollider>();
+        rb.mass = CalculateMass();
     }
 
     void Start()
     {
-        rb.mass = CalculateMass();
-
-        // Launch the body if shouldLaunch is selected, this is only used for the sanbox example
-        if (shouldLaunch)
-        {
-            Vector2 initialForce = InitialVector();
-            rb.velocity = initialForce;
-            rb.AddForce(initialForce, ForceMode.Impulse);
-        }
-
-        // Create a visual representation of the limited range of attraction
-        if (limitDistance)
-        {
-            GameObject indicator = Instantiate(limitIndicator);
-            indicator.transform.position = transform.position;
-            indicator.transform.localScale = new Vector3(maxDistance * 2f, maxDistance * 2f, maxDistance * 2f);
-        }
+        Launch();
+        InstantiateLimit();
     }
 
     void FixedUpdate()
@@ -68,9 +52,32 @@ public class Attractor : MonoBehaviour
         VelocityRotation();
     }
 
+    // Rotate body based on velocity
     void VelocityRotation()
     {
-        transform.Rotate(rb.velocity / 10f);
+        transform.Rotate(rb.velocity / 5f * Time.deltaTime);
+    }
+
+    // Create a visual representation of the limited range of attraction
+    void InstantiateLimit()
+    {
+        if (limitDistance)
+        {
+            GameObject indicator = Instantiate(limitIndicator);
+            indicator.transform.position = transform.position;
+            indicator.transform.localScale = new Vector3(maxDistance * 2f, maxDistance * 2f, maxDistance * 2f);
+        }
+    }
+
+    // Launch the body if shouldLaunch is selected, this is only used for the sanbox example
+    void Launch()
+    {
+        if (shouldLaunch)
+        {
+            Vector2 initialForce = InitialVector();
+            rb.velocity = initialForce;
+            rb.AddForce(initialForce, ForceMode.Impulse);
+        }
     }
 
     // Calculate an initial vector to launch at perpendicular to the central star
@@ -92,7 +99,7 @@ public class Attractor : MonoBehaviour
             scale *= .3f;
         }
 
-        Vector2 initialForce = Mathf.Sqrt(mass) * scale * Vector2.Perpendicular(dataManager.star.transform.position - transform.position) / Vector3.Magnitude(dataManager.star.transform.position - transform.position);
+        Vector2 initialForce = Mathf.Sqrt(mass) * scale * Vector2.Perpendicular(DataManager.instance.star.transform.position - transform.position) / Vector3.Magnitude(DataManager.instance.star.transform.position - transform.position);
         return initialForce;
     }
 
@@ -118,14 +125,14 @@ public class Attractor : MonoBehaviour
             return;
 
         // Loop through all bodies in the Data Manager
-        for (int i = 0; i < dataManager.bodies.Length; i++)
+        for (int i = 0; i < DataManager.instance.bodies.Length; i++)
         {
-            if (dataManager.bodies[i] == null)
+            if (DataManager.instance.bodies[i] == null)
                 continue;
 
-            if (dataManager.bodies[i].rb != rb)
+            if (DataManager.instance.bodies[i].rb != rb)
             {
-                ApplyGravity(dataManager.bodies[i].rb);
+                ApplyGravity(DataManager.instance.bodies[i].rb);
             }
         }
     }

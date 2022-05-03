@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class DataManager : MonoBehaviour
 {
@@ -10,6 +11,21 @@ public class DataManager : MonoBehaviour
     [System.NonSerialized] public Enemy[] enemies;
     [System.NonSerialized] public int enemiesDefeated;
     [System.NonSerialized] public int projectilesUsed;
+    [System.NonSerialized] public AttractionData[] attractors;
+
+    public static DataManager instance { get; private set; }
+
+    void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
 
     // Cache relevant objects and assign saved or default values
     void OnEnable()
@@ -21,7 +37,16 @@ public class DataManager : MonoBehaviour
         projectilesUsed = PlayerPrefs.GetInt("ProjectileCount", 0);
     }
 
-    // Save persistent data to PLayerPrefs
+    private void Start()
+    {
+        if (bodies != null)
+        {
+            attractors = bodies.Select(q => new AttractionData(q.transform.position, q.mass)).ToArray();
+        }
+    }
+
+
+    // Save persistent data to PLayerPrefs, unused for now
     public void SetPersistentData()
     {
         PlayerPrefs.SetInt("EnemiesDefeated", enemiesDefeated);

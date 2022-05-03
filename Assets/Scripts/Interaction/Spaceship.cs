@@ -14,8 +14,9 @@ public class Spaceship : MonoBehaviour
     // Objects assigned at runtime
     Rigidbody rb;
     LineRenderer line;
-    DataManager dataManager;
     UIManager uiManager;
+
+    AttractionData attractionData;
 
     // Starting position of the spaceship assigned at runtime, maximum bounds of screen assigned at runtime
     Vector2 startingPosition;
@@ -23,11 +24,15 @@ public class Spaceship : MonoBehaviour
 
     // Boolean to handle mouse being dragged
     bool mouseDrag;
-    
+
+    private void OnEnable()
+    {
+        attractionData = new AttractionData(transform.position, rb.mass);
+    }
+
     // Cache relevant objects and assign runtime variables
     void Start()
     {
-        dataManager = AssignDataManager();
         uiManager = AssignUIManager();
         maximumPosition = FindWindowLimits();
         line = gameObject.AddComponent<LineRenderer>();
@@ -117,7 +122,7 @@ public class Spaceship : MonoBehaviour
     // Increment the number of projectiles used and update UI
     void IncrementProjectilesUsed()
     {
-        dataManager.projectilesUsed++;
+        DataManager.instance.projectilesUsed++;
         uiManager.UpdateScore();
     }
 
