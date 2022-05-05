@@ -67,6 +67,7 @@ public class Attractor : MonoBehaviour
             GameObject indicator = Instantiate(limitIndicator);
             indicator.transform.position = transform.position;
             indicator.transform.localScale = new Vector3(maxDistance * 2f, maxDistance * 2f, maxDistance * 2f);
+            indicator.transform.SetParent(gameObject.transform);
         }
     }
 
