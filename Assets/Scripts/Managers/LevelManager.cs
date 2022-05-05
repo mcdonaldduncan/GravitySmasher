@@ -7,14 +7,12 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] int nextLevel;
 
-    //DataManager dataManager;
     WaitForSeconds delay = new WaitForSeconds(2);
 
     bool isLoading;
 
     private void Start()
     {
-        //dataManager = Utility.AssignDataManager();
         isLoading = false;
     }
 
@@ -34,7 +32,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator AdvanceLevelAfterDelay()
     {
         yield return delay;
-        //dataManager.SetPersistentData();
+        //DataManager.instance.SetPersistentData();
         SceneManager.LoadScene(nextLevel);
     }
 

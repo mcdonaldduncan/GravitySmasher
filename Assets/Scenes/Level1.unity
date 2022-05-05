@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17323539, g: 0.16459554, b: 0.2966911, a: 1}
+  m_IndirectSpecularColor: {r: 0.17316318, g: 0.16457182, b: 0.29665613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 113526846}
   - component: {fileID: 113526845}
   - component: {fileID: 113526844}
+  - component: {fileID: 113526850}
   m_Layer: 0
   m_Name: Star
   m_TagString: Star
@@ -523,7 +524,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 78a6e311756bae54eb2b2560b7477cbf, type: 2}
   - {fileID: 2100000, guid: 655e9838d5f1e1849b631f896ed58e60, type: 2}
+  - {fileID: 2100000, guid: b9033ed7cee9f8c479dc49ac297c6656, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -552,7 +555,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113526843}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -3489005372964814684, guid: 1f46fc5d40fe6fa459283ad918184619, type: 3}
 --- !u!4 &113526849
 Transform:
   m_ObjectHideFlags: 0
@@ -567,6 +570,18 @@ Transform:
   m_Father: {fileID: 1594211658}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113526850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113526843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857b0793cadfca545aa93b46ff198059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &273513117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchMaterial: {fileID: 2100000, guid: 78a6e311756bae54eb2b2560b7477cbf, type: 2}
   launchForce: 5
+  maximumPosition: {x: 0, y: 0}
 --- !u!1 &1594211657
 GameObject:
   m_ObjectHideFlags: 0
