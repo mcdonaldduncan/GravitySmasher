@@ -55,7 +55,7 @@ public class Attractor : MonoBehaviour
     // Rotate body based on velocity
     void VelocityRotation()
     {
-        transform.Rotate(rb.velocity / 5f * Time.deltaTime);
+        transform.Rotate(rb.velocity * Time.deltaTime);
     }
 
     // Create a visual representation of the limited range of attraction
@@ -81,7 +81,7 @@ public class Attractor : MonoBehaviour
     }
 
     // Calculate an initial vector to launch at perpendicular to the central star
-    Vector2 InitialVector()
+    Vector3 InitialVector()
     {
         float scale = Random.Range(-1f, 1f);
 
@@ -94,12 +94,16 @@ public class Attractor : MonoBehaviour
             scale = GaussianRange(-6f, -5f);
         }
 
-        if (mass > 10f)
+        if (mass > 100f)
+        {
+            scale *= .1f;
+        }
+        else if (mass > 10f)
         {
             scale *= .3f;
         }
 
-        Vector2 initialForce = Mathf.Sqrt(mass) * scale * Vector2.Perpendicular(DataManager.instance.star.transform.position - transform.position) / Vector3.Magnitude(DataManager.instance.star.transform.position - transform.position);
+        Vector3 initialForce = Mathf.Sqrt(mass) * scale * Vector2.Perpendicular(DataManager.instance.star.transform.position - transform.position) / Vector3.Magnitude(DataManager.instance.star.transform.position - transform.position);
         return initialForce;
     }
 
@@ -111,7 +115,7 @@ public class Attractor : MonoBehaviour
             // If gravitational atraction on the starship should be limited only apply within designated distance
             if (limitDistance)
             {
-                if (Vector2.Distance(rb.position, starShip.position) < maxDistance)
+                if (Vector3.Distance(rb.position, starShip.position) < maxDistance)
                     ApplyGravity(starShip);
             }
             else
@@ -140,14 +144,14 @@ public class Attractor : MonoBehaviour
     // Method to call application of calculated force
     void ApplyGravity(Rigidbody target)
     {
-        Vector2 force = Attract(target);
+        Vector3 force = Attract(target);
         target.AddForce(force, ForceMode.Force);
     }
 
     // Calculate gravitational attraction of one body on another
-    Vector2 Attract(Rigidbody toAttract)
+    Vector3 Attract(Rigidbody toAttract)
     {
-        Vector2 force = rb.position - toAttract.position;
+        Vector3 force = rb.position - toAttract.position;
         float distance = force.magnitude;
         distance = Mathf.Clamp(distance, .1f, 100f);
         force.Normalize();
