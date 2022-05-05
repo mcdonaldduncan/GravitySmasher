@@ -15,6 +15,7 @@ public class Attractor : MonoBehaviour
     [SerializeField] bool attractAll;
     [SerializeField] bool shouldLaunch;
     [SerializeField] bool limitDistance;
+    [SerializeField] bool isStatic;
 
     // rb must be public for accesibility but does not need to be visible in inspector
     [System.NonSerialized] public Rigidbody rb;

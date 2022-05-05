@@ -177,6 +177,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &14736289
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -191,7 +192,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &14736290
 SphereCollider:
@@ -312,6 +313,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &20201217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -326,7 +328,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &20201218
 SphereCollider:
@@ -447,6 +449,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &34662020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -461,7 +464,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &34662021
 SphereCollider:
@@ -582,6 +585,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &49842476
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -596,7 +600,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &49842477
 SphereCollider:
@@ -694,7 +698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67677857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -109.5, y: -5, z: 0}
+  m_LocalPosition: {x: -109.5, y: -5, z: 37.6}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -719,6 +723,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &67677860
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -733,7 +738,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &67677861
 SphereCollider:
@@ -854,6 +859,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &80994424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -868,7 +874,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &80994425
 SphereCollider:
@@ -989,6 +995,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &92015762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1003,7 +1010,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &92015763
 SphereCollider:
@@ -1126,6 +1133,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &92679895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1140,7 +1148,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &92679896
 SphereCollider:
@@ -1261,6 +1269,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &97411912
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1275,7 +1284,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &97411913
 SphereCollider:
@@ -1398,6 +1407,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &100163209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1412,7 +1422,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &100163210
 SphereCollider:
@@ -1533,6 +1543,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &122567403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1547,7 +1558,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &122567404
 SphereCollider:
@@ -1668,6 +1679,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &137477428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1682,7 +1694,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &137477429
 SphereCollider:
@@ -1805,6 +1817,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &178148849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1819,7 +1832,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &178148850
 SphereCollider:
@@ -1940,6 +1953,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &196141152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1954,7 +1968,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &196141153
 SphereCollider:
@@ -2075,6 +2089,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &204292920
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2089,7 +2104,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &204292921
 SphereCollider:
@@ -2212,6 +2227,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &213912964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2226,7 +2242,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &213912965
 SphereCollider:
@@ -2347,6 +2363,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &214787177
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2361,7 +2378,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &214787178
 SphereCollider:
@@ -2482,6 +2499,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &225498661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2496,7 +2514,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &225498662
 SphereCollider:
@@ -2617,6 +2635,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &298580056
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2631,7 +2650,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &298580057
 SphereCollider:
@@ -2752,6 +2771,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &306103147
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2766,7 +2786,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &306103148
 SphereCollider:
@@ -2930,6 +2950,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &363229884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2944,7 +2965,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &363229885
 SphereCollider:
@@ -3067,6 +3088,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &369999098
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3081,7 +3103,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &369999099
 SphereCollider:
@@ -3202,6 +3224,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &371801672
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3216,7 +3239,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &371801673
 SphereCollider:
@@ -3312,7 +3335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473702463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.5, y: -72.4, z: 0}
+  m_LocalPosition: {x: 22.5, y: -72.4, z: 27.2}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -3337,6 +3360,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &473702466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3351,7 +3375,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &473702467
 SphereCollider:
@@ -3472,6 +3496,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &486347358
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3486,7 +3511,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &486347359
 SphereCollider:
@@ -3607,6 +3632,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &501660738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3621,7 +3647,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &501660739
 SphereCollider:
@@ -3742,6 +3768,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &532895417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3756,7 +3783,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &532895418
 SphereCollider:
@@ -3852,7 +3879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547247510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.8, y: 1.5, z: -10}
+  m_LocalPosition: {x: -62.8, y: 1.5, z: -27.5}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -3877,6 +3904,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &547247513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3891,7 +3919,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &547247514
 SphereCollider:
@@ -4012,6 +4040,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &559391613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4026,7 +4055,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &559391614
 SphereCollider:
@@ -4147,6 +4176,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &577082532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4161,7 +4191,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &577082533
 SphereCollider:
@@ -4282,6 +4312,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &609260114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4296,7 +4327,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &609260115
 SphereCollider:
@@ -4419,6 +4450,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &610418848
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4433,7 +4465,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &610418849
 SphereCollider:
@@ -4552,6 +4584,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &637725500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4566,7 +4599,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &637725501
 SphereCollider:
@@ -4687,6 +4720,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &664516884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4701,7 +4735,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &664516885
 SphereCollider:
@@ -4824,6 +4858,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &667910407
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4838,7 +4873,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &667910408
 SphereCollider:
@@ -4959,6 +4994,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &679041962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4973,7 +5009,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &679041963
 SphereCollider:
@@ -5094,6 +5130,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &697293670
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5108,7 +5145,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &697293671
 SphereCollider:
@@ -5229,6 +5266,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &742302778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5243,7 +5281,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &742302779
 SphereCollider:
@@ -5466,6 +5504,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &793560730
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5480,7 +5519,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &793560731
 SphereCollider:
@@ -5601,6 +5640,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &803866365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5615,7 +5655,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &803866366
 SphereCollider:
@@ -5819,6 +5859,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &845406413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5833,7 +5874,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &845406414
 SphereCollider:
@@ -6020,6 +6061,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &901786790
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6034,7 +6076,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &901786791
 SphereCollider:
@@ -6155,6 +6197,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &959256286
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6169,7 +6212,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &959256287
 SphereCollider:
@@ -6290,6 +6333,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &961508484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6304,7 +6348,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &961508485
 SphereCollider:
@@ -6425,6 +6469,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &968176462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6439,7 +6484,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &968176463
 SphereCollider:
@@ -6560,6 +6605,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &975589542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6574,7 +6620,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &975589543
 SphereCollider:
@@ -6695,6 +6741,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1008523727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6709,7 +6756,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1008523728
 SphereCollider:
@@ -7046,6 +7093,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1087242734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7060,7 +7108,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1087242735
 SphereCollider:
@@ -7181,6 +7229,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1095119404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7195,7 +7244,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1095119405
 SphereCollider:
@@ -7316,6 +7365,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1115372610
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7330,7 +7380,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1115372611
 SphereCollider:
@@ -7451,6 +7501,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1120527899
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7465,7 +7516,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1120527900
 SphereCollider:
@@ -7586,6 +7637,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1135731458
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7600,7 +7652,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1135731459
 SphereCollider:
@@ -7721,6 +7773,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1189251769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7735,7 +7788,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1189251770
 SphereCollider:
@@ -7856,6 +7909,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1216352073
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7870,7 +7924,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1216352074
 SphereCollider:
@@ -7991,6 +8045,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1216610966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8005,7 +8060,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1216610967
 SphereCollider:
@@ -8128,6 +8183,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1218913752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8142,7 +8198,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1218913753
 SphereCollider:
@@ -8263,6 +8319,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1228391089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8277,7 +8334,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1228391090
 SphereCollider:
@@ -8400,6 +8457,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1248226137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8414,7 +8472,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1248226138
 SphereCollider:
@@ -8535,6 +8593,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1254692768
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8549,7 +8608,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1254692769
 SphereCollider:
@@ -8645,7 +8704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305307234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.4, y: -30.2, z: 0}
+  m_LocalPosition: {x: 54.4, y: -30.2, z: -24.4}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -8670,6 +8729,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1305307237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8684,7 +8744,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1305307238
 SphereCollider:
@@ -8805,6 +8865,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1320270622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8819,7 +8880,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1320270623
 SphereCollider:
@@ -8940,6 +9001,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1320866282
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8954,7 +9016,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1320866283
 SphereCollider:
@@ -9108,6 +9170,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1338357050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9122,7 +9185,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1338357051
 SphereCollider:
@@ -9412,6 +9475,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1369237160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9426,7 +9490,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1369237161
 SphereCollider:
@@ -9547,6 +9611,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1371233452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9561,7 +9626,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1371233453
 SphereCollider:
@@ -9684,6 +9749,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1373988900
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9698,7 +9764,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1373988901
 SphereCollider:
@@ -9819,6 +9885,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1395530303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9833,7 +9900,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1395530304
 SphereCollider:
@@ -9954,6 +10021,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1407231708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9968,7 +10036,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1407231709
 SphereCollider:
@@ -10089,6 +10157,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1416487490
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10103,7 +10172,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1416487491
 SphereCollider:
@@ -10224,6 +10293,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1426069847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10238,7 +10308,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1426069848
 SphereCollider:
@@ -10359,6 +10429,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1435489195
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10373,7 +10444,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1435489196
 SphereCollider:
@@ -10494,6 +10565,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1462560690
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10508,7 +10580,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1462560691
 SphereCollider:
@@ -10629,6 +10701,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1462606976
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10643,7 +10716,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1462606977
 SphereCollider:
@@ -10846,6 +10919,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1471422246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10860,7 +10934,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1471422247
 SphereCollider:
@@ -10981,6 +11055,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1484833810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10995,7 +11070,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1484833811
 SphereCollider:
@@ -11116,6 +11191,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1537567588
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11130,7 +11206,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1537567589
 SphereCollider:
@@ -11251,6 +11327,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1558782732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11265,7 +11342,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1558782733
 SphereCollider:
@@ -11386,6 +11463,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1613181992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11400,7 +11478,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1613181993
 SphereCollider:
@@ -11523,6 +11601,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1657131647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11537,7 +11616,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1657131648
 SphereCollider:
@@ -11895,6 +11974,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1823404374
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11909,7 +11989,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1823404375
 SphereCollider:
@@ -12030,6 +12110,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1824032446
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12044,7 +12125,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1824032447
 SphereCollider:
@@ -12165,6 +12246,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1829136173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12179,7 +12261,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1829136174
 SphereCollider:
@@ -12300,6 +12382,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1859631333
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12314,7 +12397,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1859631334
 SphereCollider:
@@ -12435,6 +12518,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1895022992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12449,7 +12533,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1895022993
 SphereCollider:
@@ -12545,7 +12629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895720358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.2, y: 24, z: -10}
+  m_LocalPosition: {x: 49.2, y: 24, z: -32.54}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -12570,6 +12654,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1895720361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12584,7 +12669,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1895720362
 SphereCollider:
@@ -12838,6 +12923,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1909905443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12852,7 +12938,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1909905444
 SphereCollider:
@@ -12948,7 +13034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914050301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.699997, y: -56.2, z: 10}
+  m_LocalPosition: {x: 1.699997, y: -56.2, z: 87.2}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -12973,6 +13059,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1914050304
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12987,7 +13074,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1914050305
 SphereCollider:
@@ -13108,6 +13195,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1924869774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13122,7 +13210,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1924869775
 SphereCollider:
@@ -13243,6 +13331,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1927770154
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13257,7 +13346,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1927770155
 SphereCollider:
@@ -13378,6 +13467,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1929756758
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13392,7 +13482,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1929756759
 SphereCollider:
@@ -13513,6 +13603,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &1946845039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13527,7 +13618,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &1946845040
 SphereCollider:
@@ -13651,6 +13742,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &2022438287
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13665,7 +13757,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &2022438288
 SphereCollider:
@@ -13828,6 +13920,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &2035467329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13842,7 +13935,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &2035467330
 SphereCollider:
@@ -13963,6 +14056,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &2044513024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13977,7 +14071,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &2044513025
 SphereCollider:
@@ -14098,6 +14192,7 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
+  isStatic: 0
 --- !u!54 &2127881619
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14112,7 +14207,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &2127881620
 SphereCollider:
