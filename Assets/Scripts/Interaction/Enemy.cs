@@ -5,7 +5,8 @@ using static Utility;
 
 public class Enemy : MonoBehaviour
 {
-    //DataManager dataManager;
+    [SerializeField] ParticleSystem explosion;
+
     UIManager uiManager;
     LevelManager levelManager;
 
@@ -19,9 +20,11 @@ public class Enemy : MonoBehaviour
     // On trigger enter, destroy gameobject, increment score and call UpdateScore()
     private void OnTriggerEnter(Collider other)
     {
+        explosion.Play();
         Destroy(gameObject);
         DataManager.instance.enemiesDefeated++;
         uiManager.UpdateScore();
         levelManager.CheckAdvance();
     }
+
 }

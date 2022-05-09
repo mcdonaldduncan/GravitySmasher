@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
         isLoading = false;
     }
 
+    // Check to see if enemies have been defeated
     public void CheckAdvance()
     {
         if (isLoading)

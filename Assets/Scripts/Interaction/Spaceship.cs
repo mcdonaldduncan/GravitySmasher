@@ -2,25 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static Utility;
+using Cinemachine;
 
 public class Spaceship : MonoBehaviour
 {
-    // Material assigned in inspector
+    // Material and cinemachine brain assigned in inspector
     [SerializeField] Material launchMaterial;
-    
+    [SerializeField] CinemachineBrain brain;
+
+    // Additional space for screen bounds
+    [SerializeField] Vector2 extraBounds;
+
     // Launch force assigned in inspector
     [SerializeField] float launchForce;
+    [SerializeField] float resetDelay;
 
     // Objects assigned at runtime
     Rigidbody rb;
     LineRenderer line;
     UIManager uiManager;
+    WaitForSeconds wait;
 
-    AttractionData attractionData;
-
-    // Starting position of the spaceship assigned at runtime, maximum bounds of screen assigned at runtime
+    // Starting position of the spaceship assigned at runtime, maximum bounds of screen assigned at runtime, maximum bounds not used in current build
     Vector2 startingPosition;
-    [SerializeField] Vector2 maximumPosition;
+    Vector2 maximumPosition;
 
     // Boolean to handle mouse being dragged
     bool mouseDrag;
@@ -29,15 +34,15 @@ public class Spaceship : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
-        attractionData = new AttractionData(transform.position, rb.mass);
     }
 
     // Cache relevant objects and assign runtime variables
     void Start()
     {
         uiManager = AssignUIManager();
-        maximumPosition = FindWindowLimits();
+        maximumPosition = FindWindowLimits() + extraBounds;
         line = gameObject.AddComponent<LineRenderer>();
+        wait = new WaitForSeconds(resetDelay);
         line.material = launchMaterial;
         startingPosition = rb.position;
     }
@@ -46,6 +51,19 @@ public class Spaceship : MonoBehaviour
     {
         DragProjectile();
         CheckWindowLimits();
+        CheckBrainActivation();
+    }
+
+    // Check if the cinemachine brain should be activated
+    void CheckBrainActivation()
+    {
+        if (brain.enabled == true)
+            return;
+
+        if (transform.position.x >= startingPosition.x)
+        {
+            brain.enabled = true;
+        }
     }
 
     // Snap object to mouse position after clciking on object, generate a line to indicate anticipated launch
@@ -53,6 +71,7 @@ public class Spaceship : MonoBehaviour
     {
         if (mouseDrag)
         {
+            brain.enabled = false;
             Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mp;
             Vector3 anticipatedForce = transform.position - (Vector3)startingPosition;
@@ -72,6 +91,7 @@ public class Spaceship : MonoBehaviour
     // On mouse release set mouseDrag to false, disable line and launch object
     private void OnMouseUp()
     {
+        
         line.enabled = false;
         mouseDrag = false;
         rb.isKinematic = false;
@@ -126,5 +146,24 @@ public class Spaceship : MonoBehaviour
         uiManager.UpdateScore();
     }
 
-    
+
+    #region unused
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (resetActive)
+    //        return;
+
+    //    StartCoroutine(ResetAfterDelay());
+    //}
+
+    //IEnumerator ResetAfterDelay()
+    //{
+    //    resetActive = true;
+    //    yield return wait;
+    //    ResetProjectile();
+    //    resetActive = false;
+    //}
+
+    #endregion
 }

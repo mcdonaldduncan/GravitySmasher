@@ -40,7 +40,7 @@ public class DataManager : MonoBehaviour
 
     private void Start()
     {
-        // Chose not to use struct array as it would ahve required writing data back to struct values every frame
+        // Chose not to use struct array as it would have required writing data back to struct values every frame
         if (bodies != null)
         {
             attractors = bodies.Select(q => new AttractionData(q.transform.position, q.mass)).ToArray();

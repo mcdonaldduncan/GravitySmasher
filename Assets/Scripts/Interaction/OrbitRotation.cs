@@ -10,6 +10,7 @@ public class OrbitRotation : MonoBehaviour
     float radius;
     float angle;
 
+    // Set starting angle and radius
     void Start()
     {
         radius = Vector3.Distance(transform.position, target.position);
@@ -21,6 +22,7 @@ public class OrbitRotation : MonoBehaviour
         Orbit();
     }
 
+    // Orbit object using polar coordinates
     void Orbit()
     {
         angle += rotationSpeed * Time.deltaTime;

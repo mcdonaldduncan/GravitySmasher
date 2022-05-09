@@ -177,7 +177,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &14736289
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -313,7 +312,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &20201217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -449,7 +447,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &34662020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -585,7 +582,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &49842476
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -723,7 +719,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &67677860
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -859,7 +854,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &80994424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -995,7 +989,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &92015762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1133,7 +1126,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &92679895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1269,7 +1261,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &97411912
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1407,7 +1398,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &100163209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1543,7 +1533,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &122567403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1679,7 +1668,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &137477428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1817,7 +1805,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &178148849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1953,7 +1940,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &196141152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2089,7 +2075,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &204292920
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2227,7 +2212,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &213912964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2363,7 +2347,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &214787177
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2499,7 +2482,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &225498661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2635,7 +2617,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &298580056
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2771,7 +2752,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &306103147
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2950,7 +2930,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &363229884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3088,7 +3067,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &369999098
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3224,7 +3202,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &371801672
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3360,7 +3337,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &473702466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3496,7 +3472,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &486347358
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3632,7 +3607,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &501660738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3768,7 +3742,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &532895417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3904,7 +3877,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &547247513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4040,7 +4012,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &559391613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4176,7 +4147,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &577082532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4312,7 +4282,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &609260114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4450,7 +4419,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &610418848
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4584,7 +4552,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &637725500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4720,7 +4687,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &664516884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4858,7 +4824,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &667910407
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4994,7 +4959,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &679041962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5130,7 +5094,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &697293670
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5266,7 +5229,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &742302778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5504,7 +5466,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &793560730
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5640,7 +5601,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &803866365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5859,7 +5819,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &845406413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6061,7 +6020,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &901786790
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6197,7 +6155,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &959256286
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6333,7 +6290,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &961508484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6469,7 +6425,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &968176462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6605,7 +6560,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &975589542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6741,7 +6695,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1008523727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6936,7 +6889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1079539740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7093,7 +7046,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1087242734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7229,7 +7181,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1095119404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7365,7 +7316,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1115372610
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7501,7 +7451,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1120527899
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7637,7 +7586,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1135731458
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7773,7 +7721,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1189251769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7909,7 +7856,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1216352073
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8045,7 +7991,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1216610966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8183,7 +8128,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1218913752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8319,7 +8263,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1228391089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8457,7 +8400,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1248226137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8593,7 +8535,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1254692768
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8729,7 +8670,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1305307237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8865,7 +8805,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1320270622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9001,7 +8940,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1320866282
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9170,7 +9108,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1338357050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9475,7 +9412,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1369237160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9611,7 +9547,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1371233452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9749,7 +9684,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1373988900
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9885,7 +9819,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1395530303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10021,7 +9954,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1407231708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10157,7 +10089,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1416487490
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10293,7 +10224,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1426069847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10429,7 +10359,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1435489195
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10565,7 +10494,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1462560690
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10701,7 +10629,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1462606976
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10919,7 +10846,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1471422246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11055,7 +10981,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1484833810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11191,7 +11116,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1537567588
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11327,7 +11251,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1558782732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11463,7 +11386,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1613181992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11601,7 +11523,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1657131647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11974,7 +11895,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1823404374
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12110,7 +12030,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1824032446
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12246,7 +12165,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1829136173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12382,7 +12300,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1859631333
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12518,7 +12435,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1895022992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12654,7 +12570,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1895720361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12923,7 +12838,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1909905443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13059,7 +12973,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1914050304
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13195,7 +13108,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1924869774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13331,7 +13243,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1927770154
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13467,7 +13378,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1929756758
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13603,7 +13513,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &1946845039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13742,7 +13651,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &2022438287
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13920,7 +13828,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &2035467329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14056,7 +13963,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &2044513024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14192,7 +14098,6 @@ MonoBehaviour:
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
-  isStatic: 0
 --- !u!54 &2127881619
 Rigidbody:
   m_ObjectHideFlags: 0
