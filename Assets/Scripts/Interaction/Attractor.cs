@@ -15,7 +15,6 @@ public class Attractor : MonoBehaviour
     [SerializeField] bool attractAll;
     [SerializeField] bool shouldLaunch;
     [SerializeField] bool limitDistance;
-    [SerializeField] bool isStatic;
 
     // rb must be public for accesibility but does not need to be visible in inspector
     [System.NonSerialized] public Rigidbody rb;
@@ -96,6 +95,7 @@ public class Attractor : MonoBehaviour
             scale = GaussianRange(-6f, -5f);
         }
 
+        // reduce scaling factor for high mass objects
         if (mass > 100f)
         {
             scale *= .1f;
@@ -153,6 +153,7 @@ public class Attractor : MonoBehaviour
     // Calculate gravitational attraction of one body on another
     Vector3 Attract(Rigidbody toAttract)
     {
+        // Vector between bodies
         Vector3 force = rb.position - toAttract.position;
         float distance = force.magnitude;
         distance = Mathf.Clamp(distance, .1f, 100f);

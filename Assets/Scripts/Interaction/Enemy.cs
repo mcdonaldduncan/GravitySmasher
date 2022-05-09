@@ -9,10 +9,9 @@ public class Enemy : MonoBehaviour
     UIManager uiManager;
     LevelManager levelManager;
 
-    // Assign dataManager and uiManager
+    // Assign level and uiManager
     private void Start()
     {
-        //dataManager = AssignDataManager();
         uiManager = AssignUIManager();
         levelManager = AssignLevelManager();
     }

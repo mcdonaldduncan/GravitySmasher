@@ -4,17 +4,32 @@ using UnityEngine;
 
 public class OrbitRotation : MonoBehaviour
 {
+    [SerializeField] Transform target;
+    [SerializeField] float rotationSpeed;
 
+    float radius;
+    float angle;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        radius = Vector3.Distance(transform.position, target.position);
+        angle = Mathf.Deg2Rad * Vector3.Angle(target.position, transform.position);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Orbit();
+    }
+
+    void Orbit()
+    {
+        angle += rotationSpeed * Time.deltaTime;
+
+        float x = radius * Mathf.Cos(angle);
+        float y = radius * Mathf.Sin(angle);
+
+        Vector3 polarVector = new Vector3(x, y, 0);
+
+        transform.position = target.position + polarVector;
     }
 }
