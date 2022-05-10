@@ -98,7 +98,7 @@ public class Attractor : MonoBehaviour
         // reduce scaling factor for high mass objects
         if (mass > 100f)
         {
-            scale *= .1f;
+            scale *= .2f;
         }
         else if (mass > 10f)
         {
