@@ -32,6 +32,7 @@ public class LevelManager : MonoBehaviour
     // Move to next level after delay
     IEnumerator AdvanceLevelAfterDelay()
     {
+        isLoading = true;
         yield return delay;
         //DataManager.instance.SetPersistentData();
         SceneManager.LoadScene(nextLevel);
@@ -46,5 +47,10 @@ public class LevelManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(nextLevel);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
