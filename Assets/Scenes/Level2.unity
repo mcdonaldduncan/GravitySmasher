@@ -16963,6 +16963,7 @@ MonoBehaviour:
   extraBounds: {x: 10, y: 10}
   launchForce: 5
   resetDelay: 5
+  accelerationMult: 100
 --- !u!1 &1594211657
 GameObject:
   m_ObjectHideFlags: 0

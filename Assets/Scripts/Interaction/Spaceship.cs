@@ -16,6 +16,7 @@ public class Spaceship : MonoBehaviour
     // Launch force assigned in inspector
     [SerializeField] float launchForce;
     [SerializeField] float resetDelay;
+    [SerializeField] float accelerationMult;
 
     // Objects assigned at runtime
     Rigidbody rb;
@@ -29,6 +30,7 @@ public class Spaceship : MonoBehaviour
 
     // Boolean to handle mouse being dragged
     bool mouseDrag;
+    bool shouldAccelerate;
 
     private void OnEnable()
     {
@@ -52,6 +54,30 @@ public class Spaceship : MonoBehaviour
         DragProjectile();
         CheckWindowLimits();
         CheckBrainActivation();
+        CheckForAccelerate();
+    }
+
+    void FixedUpdate()
+    {
+        Accelerate();
+    }
+
+    void CheckForAccelerate()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            shouldAccelerate = true;
+        }
+    }
+
+    void Accelerate()
+    {
+        if (shouldAccelerate)
+        {
+            Debug.Log(rb.velocity);
+            rb.AddForce(rb.velocity * accelerationMult);
+            shouldAccelerate = false;
+        }
     }
 
     // Check if the cinemachine brain should be activated
