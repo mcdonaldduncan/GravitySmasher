@@ -12,9 +12,11 @@ public class Attractor : MonoBehaviour
     // Fields designated in the inspector
     [SerializeField] float density;
     [SerializeField] float maxDistance;
+    [SerializeField] float rotationalAmplifier;
     [SerializeField] bool attractAll;
     [SerializeField] bool shouldLaunch;
     [SerializeField] bool limitDistance;
+    
 
     // rb must be public for accesibility but does not need to be visible in inspector
     [System.NonSerialized] public Rigidbody rb;
@@ -55,7 +57,7 @@ public class Attractor : MonoBehaviour
     // Rotate body based on velocity
     void VelocityRotation()
     {
-        transform.Rotate(rb.velocity * Time.deltaTime);
+        transform.Rotate(rb.velocity * Time.deltaTime * rotationalAmplifier);
     }
 
     // Create a visual representation of the limited range of attraction

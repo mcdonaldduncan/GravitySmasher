@@ -5800,7 +5800,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 19.536469
+  orthographic size: 29.817186
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11798,7 +11798,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0349762, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17428,6 +17428,7 @@ MonoBehaviour:
   extraBounds: {x: 5, y: 5}
   launchForce: 5
   resetDelay: 5
+  accelerationMult: 100
 --- !u!1 &1594211657
 GameObject:
   m_ObjectHideFlags: 0

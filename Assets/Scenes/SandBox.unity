@@ -174,6 +174,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -309,6 +310,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -444,6 +446,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -557,7 +560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49842473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.700005, y: -28.2, z: 10}
+  m_LocalPosition: {x: -20.700005, y: -28.2, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -579,6 +582,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -716,6 +720,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -851,6 +856,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -964,7 +970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92015759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.300003, y: -22.9, z: 10}
+  m_LocalPosition: {x: -26.300003, y: -22.9, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -986,6 +992,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -1123,6 +1130,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -1236,7 +1244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97411909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 147.8, y: -86.600006, z: 0}
+  m_LocalPosition: {x: 53.7, y: -86.600006, z: 78.8}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -1258,6 +1266,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 3
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -1395,6 +1404,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -1626,6 +1636,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -1761,6 +1772,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -1876,7 +1888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178148846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -54.199997, y: -6.0999985, z: 10}
+  m_LocalPosition: {x: -54.199997, y: -6.0999985, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -1898,6 +1910,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2033,6 +2046,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2146,7 +2160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204292917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.800003, y: -25.7, z: 10}
+  m_LocalPosition: {x: -26.800003, y: -25.7, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -2168,6 +2182,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2305,6 +2320,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2418,7 +2434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214787174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.379997, y: -49.02, z: 0}
+  m_LocalPosition: {x: -12.379997, y: -49.02, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -2440,6 +2456,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2575,6 +2592,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2688,7 +2706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298580053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.9, y: 2.7, z: 10}
+  m_LocalPosition: {x: 67.9, y: 2.7, z: 71.3}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -2710,6 +2728,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -2845,6 +2864,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3001,7 +3021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363229881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.200005, y: -28.2, z: 10}
+  m_LocalPosition: {x: -24.200005, y: -28.2, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -3023,6 +3043,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3160,6 +3181,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3295,6 +3317,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3430,6 +3453,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3565,6 +3589,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3700,6 +3725,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3813,7 +3839,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532895414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.78, y: -51.52, z: 0}
+  m_LocalPosition: {x: -13.78, y: -51.52, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -3835,6 +3861,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -3970,6 +3997,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4105,6 +4133,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4218,7 +4247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577082529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.099997, y: 23.7, z: 1}
+  m_LocalPosition: {x: 10.099997, y: 23.7, z: 90.700005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -4240,6 +4269,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4375,6 +4405,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4490,7 +4521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610418845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 186.8, y: -195, z: 0}
+  m_LocalPosition: {x: 186.8, y: -195, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -4512,6 +4543,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4645,6 +4677,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4780,6 +4813,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -4895,7 +4929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667910404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -61.5, y: -9.799999, z: 10}
+  m_LocalPosition: {x: -61.5, y: -9.799999, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -4917,6 +4951,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -5052,6 +5087,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -5165,7 +5201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697293667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.6, y: -7.3, z: 0}
+  m_LocalPosition: {x: -67.6, y: -7.3, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -5187,6 +5223,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -5300,7 +5337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742302775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.9, y: 1, z: 0}
+  m_LocalPosition: {x: 88.9, y: 1, z: -62.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -5322,6 +5359,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -5559,6 +5597,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -5672,7 +5711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803866362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6, y: 26.3, z: -5}
+  m_LocalPosition: {x: -0.6, y: 26.3, z: -44.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -5694,6 +5733,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -5890,7 +5930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845406410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -204.8, y: -18.7, z: 0}
+  m_LocalPosition: {x: -82.3, y: -18.7, z: -86.2}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -5912,6 +5952,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -6113,6 +6154,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -6248,6 +6290,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -6383,6 +6426,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -6518,6 +6562,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -6631,7 +6676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975589539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.2, y: -2.8, z: 0}
+  m_LocalPosition: {x: 86.2, y: -2.8, z: -62.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -6653,6 +6698,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -6766,7 +6812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008523724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.8, y: -51.1, z: -15}
+  m_LocalPosition: {x: -28.8, y: -51.1, z: -26}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -6788,6 +6834,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 5
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7139,6 +7186,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7274,6 +7322,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7409,6 +7458,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7522,7 +7572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120527896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -65, y: -9.799999, z: 10}
+  m_LocalPosition: {x: -65, y: -9.799999, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -7544,6 +7594,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7657,7 +7708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135731455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.4, y: 0.1, z: 0}
+  m_LocalPosition: {x: 86.4, y: 0.1, z: -62.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -7679,6 +7730,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7792,7 +7844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189251766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10000038, y: 29.1, z: 0}
+  m_LocalPosition: {x: -0.10000038, y: 29.1, z: -39.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -7814,6 +7866,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -7949,6 +8002,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8084,6 +8138,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8221,6 +8276,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8356,6 +8412,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8493,6 +8550,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8628,6 +8686,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8763,6 +8822,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -8876,7 +8936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320270619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.299995, y: -6.0999985, z: 0}
+  m_LocalPosition: {x: -62.299995, y: -6.0999985, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -8898,6 +8958,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -9033,6 +9094,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -9179,7 +9241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338357047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.800001, y: 27.5, z: 1}
+  m_LocalPosition: {x: 12.800001, y: 27.5, z: 90.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -9201,6 +9263,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -9483,7 +9546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369237157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.499998, y: 23.8, z: 0}
+  m_LocalPosition: {x: 5.499998, y: 23.8, z: 89.700005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -9505,6 +9568,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -9640,6 +9704,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -9755,7 +9820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373988897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.699997, y: -6.999998, z: 10}
+  m_LocalPosition: {x: -56.699997, y: -6.999998, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -9777,6 +9842,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -9912,6 +9978,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10025,7 +10092,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407231705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7000027, y: 27.5, z: 0}
+  m_LocalPosition: {x: 4.7000027, y: 27.5, z: -39.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -10047,6 +10114,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10160,7 +10228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416487487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.479998, y: -53.62, z: 0}
+  m_LocalPosition: {x: -14.479998, y: -53.62, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -10182,6 +10250,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10317,6 +10386,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10430,7 +10500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435489192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.9, y: -9.899998, z: 10}
+  m_LocalPosition: {x: -56.9, y: -9.899998, z: 70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -10452,6 +10522,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10587,6 +10658,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10722,6 +10794,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -10919,7 +10992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471422243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9999981, y: 23.8, z: -5}
+  m_LocalPosition: {x: 1.9999981, y: 23.8, z: -44.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -10941,6 +11014,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -11076,6 +11150,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -11189,7 +11264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537567585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.300003, y: 26.6, z: 1}
+  m_LocalPosition: {x: 10.300003, y: 26.6, z: 90.700005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -11211,6 +11286,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -11346,6 +11422,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -11481,6 +11558,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -11618,6 +11696,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -11990,6 +12069,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -12103,7 +12183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824032443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.279999, y: -51.52, z: 0}
+  m_LocalPosition: {x: -17.279999, y: -51.52, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -12125,6 +12205,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -12260,6 +12341,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -12395,6 +12477,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -12508,7 +12591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895022989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -135.3, y: -99.3, z: 0}
+  m_LocalPosition: {x: -81.7, y: -99.3, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -12530,6 +12613,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -12665,6 +12749,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -12933,6 +13018,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13068,6 +13154,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13181,7 +13268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924869771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.1, y: -4.499998, z: 0}
+  m_LocalPosition: {x: -67.1, y: -4.499998, z: 60.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -13203,6 +13290,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13338,6 +13426,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13451,7 +13540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929756755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126.8, y: -9.3, z: 0}
+  m_LocalPosition: {x: 107.2, y: -9.3, z: -21.3}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1365020857}
@@ -13473,6 +13562,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 3
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13608,6 +13698,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13746,6 +13837,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -13923,6 +14015,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -14058,6 +14151,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 1
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
@@ -14193,6 +14287,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 0}
   density: 2
   maxDistance: 0
+  rotationalAmplifier: 2
   attractAll: 1
   shouldLaunch: 1
   limitDistance: 0
