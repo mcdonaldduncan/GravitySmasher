@@ -47,8 +47,7 @@ public class DataManager : MonoBehaviour
         }
     }
 
-
-    // Save persistent data to PLayerPrefs, unused for now
+    // Save persistent data to PlayerPrefs, unused for now
     public void SetPersistentData()
     {
         PlayerPrefs.SetInt("EnemiesDefeated", enemiesDefeated);

@@ -28,9 +28,10 @@ public class Spaceship : MonoBehaviour
     Vector2 startingPosition;
     Vector2 maximumPosition;
 
-    // Boolean to handle mouse being dragged
+    // Boolean values to handle mouse being dragged and input for powerups
     bool mouseDrag;
     bool shouldAccelerate;
+    bool shouldSplit;
 
     private void OnEnable()
     {
@@ -70,11 +71,18 @@ public class Spaceship : MonoBehaviour
         }
     }
 
+    void Split()
+    {
+        if (shouldSplit)
+        {
+
+        }
+    }
+
     void Accelerate()
     {
         if (shouldAccelerate)
         {
-            Debug.Log(rb.velocity);
             rb.AddForce(rb.velocity * accelerationMult);
             shouldAccelerate = false;
         }
