@@ -10,38 +10,35 @@ public class SwarmSpawner : MonoBehaviour
     [SerializeField] float baseDelay;
 
     float timeBetweenSpawn;
-    float timeSinceSpawn;
+    float spawnTime;
     
     Vector2 windowLimits;
 
-    
-    
     void Start()
     {
-        timeSinceSpawn = 0.0f;
+        spawnTime = 0.0f;
         timeBetweenSpawn = baseDelay;
         windowLimits = FindWindowLimits();
     }
 
     void Update()
     {
-        
+        SpawnTimer();
     }
 
     void Spawn()
     {
         Vector2 startPosition = new Vector2(Random.Range(-windowLimits.x, windowLimits.x), Random.Range(-windowLimits.y, windowLimits.y));
         GameObject newSwarmer = Instantiate(swarmer);
-        
+        newSwarmer.transform.position = startPosition;
+        spawnTime = Time.time;
     }
 
     void SpawnTimer()
     {
-        timeSinceSpawn += Time.deltaTime;
-
-        if (timeSinceSpawn > timeBetweenSpawn)
+        if (Time.time - spawnTime > timeBetweenSpawn)
         {
-
+            Spawn();
         }
     }
 
