@@ -421,15 +421,19 @@ PrefabInstance:
       objectReference: {fileID: 1353668298}
     - target: {fileID: 3298041891869008530, guid: b673163a7f4766540aa58bdc3498bbc6, type: 3}
       propertyPath: maxForce
-      value: 10
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3298041891869008530, guid: b673163a7f4766540aa58bdc3498bbc6, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298041891869008530, guid: b673163a7f4766540aa58bdc3498bbc6, type: 3}
+      propertyPath: minForce
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3298041891869008530, guid: b673163a7f4766540aa58bdc3498bbc6, type: 3}
       propertyPath: baseStrength
-      value: 0.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3298041891869008531, guid: b673163a7f4766540aa58bdc3498bbc6, type: 3}
       propertyPath: m_Name
