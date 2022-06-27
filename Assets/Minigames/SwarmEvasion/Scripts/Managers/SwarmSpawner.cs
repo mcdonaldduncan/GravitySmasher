@@ -9,6 +9,8 @@ public class SwarmSpawner : MonoBehaviour
 
     [SerializeField] float baseDelay;
 
+    [SerializeField] int totalSwarmers;
+
     float timeBetweenSpawn;
     float spawnTime;
     
@@ -32,6 +34,7 @@ public class SwarmSpawner : MonoBehaviour
         GameObject newSwarmer = Instantiate(swarmer);
         newSwarmer.transform.position = startPosition;
         spawnTime = Time.time;
+        totalSwarmers++;
     }
 
     void SpawnTimer()
@@ -41,6 +44,8 @@ public class SwarmSpawner : MonoBehaviour
             Spawn();
         }
     }
+
+    
 
     
 }

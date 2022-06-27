@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class InverseSwarmer : MonoBehaviour
 {
-    [SerializeField] Transform target;
-
     [SerializeField] float maxSpeed;
     [SerializeField] float maxForce;
     [SerializeField] float minForce;
     [SerializeField] float baseStrength;
 
-    [SerializeField] Vector2 velocity;
+    Transform target;
+
+    Vector2 velocity;
     Vector2 acceleration;
+
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
     void Update()
     {
@@ -23,7 +28,6 @@ public class InverseSwarmer : MonoBehaviour
     {
         acceleration += CalculateForce();
         velocity += acceleration;
-        //velocity = Vector2.ClampMagnitude(velocity, maxSpeed);
         transform.position += (Vector3)velocity * Time.deltaTime;
         acceleration = Vector2.zero;
     }
@@ -32,16 +36,22 @@ public class InverseSwarmer : MonoBehaviour
     {
         
         Vector2 desired = target.position - transform.position;
-        float distance = desired.magnitude;
-        //float tempForce = maxForce * distance;
         desired.Normalize();
         desired *= maxSpeed;
-        //float strength = distance * baseStrength;
+
         Vector2 steer = desired - velocity;
         steer.Normalize();
         steer *= maxForce;
-        //steer *= tempForce;
+
         return steer;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+        }
     }
 
 }
