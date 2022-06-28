@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EndManager : MonoBehaviour
 {
-    [System.NonSerialized] bool gameOver;
+    [System.NonSerialized] public bool gameOver;
+    [System.NonSerialized] public int totalSwarmers;
 
     public static EndManager instance;
 
