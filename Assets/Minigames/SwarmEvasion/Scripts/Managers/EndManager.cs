@@ -5,9 +5,8 @@ using UnityEngine;
 public class EndManager : MonoBehaviour
 {
     [System.NonSerialized] public bool gameOver;
-    [System.NonSerialized] public int totalSwarmers;
 
-    public static EndManager instance;
+    public static EndManager instance { get; private set; }
 
     void Start()
     {
@@ -19,13 +18,16 @@ public class EndManager : MonoBehaviour
         {
             instance = this;
         }
+
+        instance.gameOver = false;
+
     }
 
     void Update()
     {
-        if(gameOver)
-        {
-            Time.timeScale = 0;
-        }
+        //if(gameOver)
+        //{
+        //    Time.timeScale = 0;
+        //}
     }
 }

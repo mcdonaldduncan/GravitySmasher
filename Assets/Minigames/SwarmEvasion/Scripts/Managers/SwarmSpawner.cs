@@ -9,7 +9,7 @@ public class SwarmSpawner : MonoBehaviour
 
     [SerializeField] float baseDelay;
 
-    [SerializeField] int totalSwarmers;
+    [System.NonSerialized] public int totalSwarmers;
 
     float timeBetweenSpawn;
     float spawnTime;
@@ -19,12 +19,16 @@ public class SwarmSpawner : MonoBehaviour
     void Start()
     {
         spawnTime = 0.0f;
+        totalSwarmers = 0;
         timeBetweenSpawn = baseDelay;
         windowLimits = FindWindowLimits();
     }
 
     void Update()
     {
+        if (EndManager.instance.gameOver)
+            return;
+
         SpawnTimer();
     }
 

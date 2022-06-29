@@ -50,7 +50,7 @@ public class InverseSwarmer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-
+            EndManager.instance.gameOver = true;
         }
     }
 
