@@ -166,11 +166,13 @@ public class Spaceship : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         transform.position = startingPosition;
     }
+   
 
     // Reset projectile on collision
     private void OnCollisionEnter(Collision collision)
     {
         ResetProjectile();
+        
     }
 
     // Increment the number of projectiles used and update UI
