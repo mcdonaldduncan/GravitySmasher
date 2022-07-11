@@ -34,7 +34,6 @@ public class InverseSwarmer : MonoBehaviour
 
     Vector2 CalculateForce()
     {
-        
         Vector2 desired = target.position - transform.position;
         desired.Normalize();
         desired *= maxSpeed;

@@ -125,7 +125,6 @@ public class Spaceship : MonoBehaviour
     // On mouse release set mouseDrag to false, disable line and launch object
     private void OnMouseUp()
     {
-        
         line.enabled = false;
         mouseDrag = false;
         rb.isKinematic = false;
