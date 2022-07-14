@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 44485132}
   - component: {fileID: 44485131}
   - component: {fileID: 44485130}
+  - component: {fileID: 44485129}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Untagged
@@ -212,6 +213,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &44485129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44485128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857b0793cadfca545aa93b46ff198059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &44485130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5337,6 +5350,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 100
   maxDistance: 20
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -5531,6 +5545,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 100
   maxDistance: 10
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -5800,7 +5815,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 29.817186
+  orthographic size: 20.856281
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5986,6 +6001,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 250
   maxDistance: 10
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -6340,6 +6356,7 @@ GameObject:
   - component: {fileID: 863372402}
   - component: {fileID: 863372401}
   - component: {fileID: 863372405}
+  - component: {fileID: 863372406}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -6437,6 +6454,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1438937376}
+--- !u!114 &863372406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863372400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857b0793cadfca545aa93b46ff198059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &897304140
 GameObject:
   m_ObjectHideFlags: 0
@@ -11798,7 +11827,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.9062003, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11908,6 +11937,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 200
   maxDistance: 10
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -12042,6 +12072,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 500
   maxDistance: 4
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -12351,6 +12382,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 300
   maxDistance: 7
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -17598,6 +17630,7 @@ GameObject:
   - component: {fileID: 1833072753}
   - component: {fileID: 1833072752}
   - component: {fileID: 1833072751}
+  - component: {fileID: 1833072756}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -17695,6 +17728,18 @@ Transform:
   m_Father: {fileID: 423824545}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1833072756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833072750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857b0793cadfca545aa93b46ff198059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1838134018
 GameObject:
   m_ObjectHideFlags: 0

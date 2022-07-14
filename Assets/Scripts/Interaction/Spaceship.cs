@@ -32,6 +32,7 @@ public class Spaceship : MonoBehaviour
     bool mouseDrag;
     bool shouldAccelerate;
     bool shouldSplit;
+    bool spawnOrbits;
 
     private void OnEnable()
     {
@@ -77,6 +78,19 @@ public class Spaceship : MonoBehaviour
         {
 
         }
+    }
+
+    void OrbitingChildren()
+    {
+        if (spawnOrbits)
+        {
+
+        }
+    }
+
+    void FireMissiles()
+    {
+
     }
 
     void Accelerate()
