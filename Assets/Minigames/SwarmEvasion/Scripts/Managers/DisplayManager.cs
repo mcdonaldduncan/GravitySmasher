@@ -24,6 +24,5 @@ public class DisplayManager : MonoBehaviour
         {
             scoreText.text = $"{swarmSpawner.totalSwarmers} swarmers are after you!";
         }
-        
     }
 }
