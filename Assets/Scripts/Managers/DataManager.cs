@@ -15,7 +15,7 @@ public class DataManager : MonoBehaviour
 
     public static DataManager instance { get; private set; }
 
-    // Singleton instantiator
+    // Singleton set up
     void Awake()
     {
         if (instance != null && instance != this)

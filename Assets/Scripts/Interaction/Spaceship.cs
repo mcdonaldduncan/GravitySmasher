@@ -64,6 +64,9 @@ public class Spaceship : MonoBehaviour
         Accelerate();
     }
 
+    #region Powerups    
+    // assorted powerups to be implemented
+
     void CheckForAccelerate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -102,6 +105,8 @@ public class Spaceship : MonoBehaviour
         }
     }
 
+    #endregion Powerups
+
     // Check if the cinemachine brain should be activated
     void CheckBrainActivation()
     {
@@ -114,7 +119,7 @@ public class Spaceship : MonoBehaviour
         }
     }
 
-    // Snap object to mouse position after clciking on object, generate a line to indicate anticipated launch
+    // Snap object to mouse position after clicking on object, generate a line to indicate anticipated launch
     void DragProjectile()
     {
         if (mouseDrag)

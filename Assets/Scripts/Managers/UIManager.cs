@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = $"Projectiles Used:{DataManager.instance.projectilesUsed}\nEnemies Destroyed: {DataManager.instance.enemiesDefeated}";
+            scoreText.text = $"Projectiles Used: {DataManager.instance.projectilesUsed}\nEnemies Destroyed: {DataManager.instance.enemiesDefeated}";
         }
     }
 

@@ -456,6 +456,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 500
   maxDistance: 4
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -653,6 +654,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 100
   maxDistance: 20
+  rotationalAmplifier: 0
   attractAll: 1
   shouldLaunch: 0
   limitDistance: 1
@@ -809,7 +811,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0349762, y: 1}
+    m_SensorSize: {x: 1.9062003, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1236,7 +1238,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 17.018011
+  orthographic size: 18.167686
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -16617,6 +16619,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 500
   maxDistance: 4
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1
@@ -16960,7 +16963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchMaterial: {fileID: 2100000, guid: 78a6e311756bae54eb2b2560b7477cbf, type: 2}
   brain: {fileID: 479996618}
-  extraBounds: {x: 10, y: 10}
+  extraBounds: {x: 15, y: 15}
   launchForce: 5
   resetDelay: 5
   accelerationMult: 100
@@ -17123,6 +17126,7 @@ MonoBehaviour:
   limitIndicator: {fileID: 2352097201104793380, guid: 3d528fdd7f8224245a90e90d12ef5480, type: 3}
   density: 500
   maxDistance: 4
+  rotationalAmplifier: 0
   attractAll: 0
   shouldLaunch: 0
   limitDistance: 1

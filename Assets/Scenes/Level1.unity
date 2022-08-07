@@ -17457,7 +17457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchMaterial: {fileID: 2100000, guid: 78a6e311756bae54eb2b2560b7477cbf, type: 2}
   brain: {fileID: 479996618}
-  extraBounds: {x: 5, y: 5}
+  extraBounds: {x: 15, y: 10}
   launchForce: 5
   resetDelay: 5
   accelerationMult: 100
