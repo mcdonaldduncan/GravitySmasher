@@ -11,7 +11,6 @@ public class DataManager : MonoBehaviour
     [System.NonSerialized] public Enemy[] enemies;
     [System.NonSerialized] public int enemiesDefeated;
     [System.NonSerialized] public int projectilesUsed;
-    [System.NonSerialized] public AttractionData[] attractors;
 
     public static DataManager instance { get; private set; }
 
@@ -38,14 +37,6 @@ public class DataManager : MonoBehaviour
         projectilesUsed = PlayerPrefs.GetInt("ProjectileCount", 0);
     }
 
-    private void Start()
-    {
-        // Chose not to use struct array as it would have required writing data back to struct values every frame
-        if (bodies != null)
-        {
-            attractors = bodies.Select(q => new AttractionData(q.transform.position, q.mass)).ToArray();
-        }
-    }
 
     // Save persistent data to PlayerPrefs, unused for now
     public void SetPersistentData()
