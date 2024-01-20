@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
     }
 
     
-
+    // Todo: Check to see if a method like setpersistentdata can be subscribed to load/unload. Maybe just on destroy
     // Move to next level after delay
     IEnumerator AdvanceLevelAfterDelay()
     {
