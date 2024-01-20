@@ -34,6 +34,7 @@ public class BeaconFollower : MonoBehaviour
         int temp = 0;
         for (int i = 0; i < beacons.Count; i++)
         {
+            // Todo: calc distance once per i
             if (Vector3.Distance(transform.position, beacons[i].transform.position) < shortest)
             {
                 shortest = Vector3.Distance(transform.position, beacons[i].transform.position);
