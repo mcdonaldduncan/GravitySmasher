@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     // Update the score text
     public void UpdateScore()
     {
+        // Todo: Change to use static strings
         if (scoreText != null)
         {
             scoreText.text = $"Projectiles Used: {DataManager.instance.projectilesUsed}\nEnemies Destroyed: {DataManager.instance.enemiesDefeated}";
